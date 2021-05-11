@@ -1,16 +1,3 @@
-function generateChallenge (event){
-    event.preventDefault()
-    let varNames = ['nameOne', 'genderOne', 'eraOne', 'nameTwo', 'genderTwo', 'eraTwo']
-    let nameOne = $('#nameOne').val();
-    for(let i=0; i<varNames.length; i++){
-        if($(`#${varNames[i]}`).val() !== ""){
-            console.log($(`#${varNames[i]}`).val())
-        }
-    }
-};
-
-
-
 const actorData =[
     {
         name: "Kevin Bacon",
@@ -39,6 +26,7 @@ const actorData =[
     }
 ];
 
+//preparing lists for random name generation
 let listActorNames = [];
 let listActorMale = [];
 let listActorFemale =[];
@@ -79,5 +67,42 @@ function Alphabetize(a, b) {
     return 0;
 }
 
+//take user input to use in creating challenge
+
+function generateChallenge (event){
+    event.preventDefault()
+    let paramOptionsOne = ['genderOne', 'eraOne'];
+    let paramOptionsTwo = ['genderTwo', 'eraTwo'];
+    let resultA = '';
+    let resultB = '';
+    //find resultA
+    if($('#nameOne').val() !== ""){ //if name is true set name, done
+        resultA = $('#nameOne').val();
+        } else {
+            
+        }
+        
+     
+    
+    /*if($('#nameOne').val() !== ""){
+        resultA = $('#nameOne').val();
+    } else if ($(`#genderOne`).val() ===) {
+
+    }
+
+    for(let i=0; i<paramOptions.length; i++){
+        if($(`#${paramOptions[i]}`).val() !== ""){
+            console.log($(`#${paramOptions[i]}`).val())
+            //use this to randomly pick names from list
+        }
+    }*/
+
+    return deliverResult(resultA, resultB)
+};
+
+//return challenge to user
+function deliverResult(resultA, resultB){
+    $('.result').html(`<div>Connect ${resultA} to ${resultB}</div>`)
+}
 
 $(prepLists);
