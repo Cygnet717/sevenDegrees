@@ -18,34 +18,66 @@ const actorData =[
         era: "new"
     },
     {
-        name: "testOne",
+        name: "test One",
         gender: "male",
         era: "classic"
     },
     {
-        name: "testTwo",
+        name: "test Two",
         gender: "female",
         era: "new"
     },
     {
-        name: "testThree",
+        name: "test Three",
         gender: "male",
         era: "new"
     },
     {
-        name: "testFour",
+        name: "test Four",
         gender: "female",
         era: "classic"
     }
 ];
 
 let listActorNames = [];
+let listActorMale = [];
+let listActorFemale =[];
+let listActorClassic = [];
+let listActorNew = [];
 
 function prepLists (){
     for(let i=0; i<actorData.length; i++){
         listActorNames.push(actorData[i].name)
     }
-    console.log(listActorNames)
+    listActorNames.sort(Alphabetize);
+
+    for(let i=0; i<actorData.length; i++){
+        if(actorData[i].gender === 'male'){
+            listActorMale.push(actorData[i].name)
+        } else {
+            listActorFemale.push(actorData[i].name)
+        }
+    }
+
+    for(let i=0; i<actorData.length; i++){
+        if(actorData[i].era === 'new'){
+            listActorNew.push(actorData[i].name)
+        } else {
+            listActorClassic.push(actorData[i].name)
+        }
+    }
 }
+
+function Alphabetize(a, b) {
+    var splitA = a.split(" ");
+    var splitB = b.split(" ");
+    var lastA = splitA[splitA.length - 1];
+    var lastB = splitB[splitB.length - 1];
+
+    if (lastA < lastB) return -1;
+    if (lastA > lastB) return 1;
+    return 0;
+}
+
 
 $(prepLists);
