@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>SevenDegrees</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <link href="main.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
@@ -20,15 +21,20 @@
             <ledgend>Person One</ledgend>
             <label for="nameOne">Name</label>
             <select id="nameOne" name="nameOne">
-                <option></option>
+                <option>Select one</option>
+                
             </select>
             <label for="genderOne">Gender</label>
             <select id="genderOne" name="genderOne">
-                <option></option>
+                <option>Select one</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
             </select>
             <label for="eraOne">Era</label>
             <select id="eraOne" name="eraOne">
-                <option></option>
+                <option>Select one</option>
+                <option value="new">New</option>
+                <option value="classic">Classic</option>
             </select>
         </fieldset>
         <fieldset>
@@ -39,14 +45,19 @@
             </select>
             <label for="genderTwo">Gender</label>
             <select id="genderTwo" name="genderTwo">
-                <option></option>
+                <option>Select one</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
             </select>
             <label for="eraTwo">Era</label>
             <select id="eraTwo" name="eraTwo">
-                <option></option>
+                <option>Select one</option>
+                <option value="new">New</option>
+                <option value="classic">Classic</option>
             </select>
         </fieldset>
-        <input type="submit">Challenge</input>
+        <button >Kevin Bacon</button>
+        <input type="submit" value="Challenge" onClick="generateChallenge(event)"></input>
     </form>
 
     <div class="result">seven degree challenge</div>
