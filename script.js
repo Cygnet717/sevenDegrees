@@ -87,8 +87,8 @@ function generateChallenge (event){
     }
     console.log(userParams.length)
     if(userParams.length === 0) {
-        resultA = findRandomName();
-        resultB = findRandomName();
+        resultA = findRandomName(listActorNames);
+        resultB = findRandomName(listActorNames);
     } else {
         //use params to pare down search
         console.log('to be built')
@@ -97,14 +97,27 @@ function generateChallenge (event){
     return deliverResult(resultA, resultB)
 };
 
-function findRandomName(){
-    let rand = Math.floor(Math.random()*listActorNames.length)
-    return listActorNames[rand]
+function findRandomName(list){
+    let rand = Math.floor(Math.random()*list.length)
+    return list[rand]
 }
 
 //return challenge to user
 function deliverResult(resultA, resultB){
     $('.result').html(`<div>Connect ${resultA} to ${resultB}</div>`)
+}
+
+let count = 0;
+function countConnection(event){
+    event.preventDefault();
+    count++;
+    $('#connectionCount').text(count);
+}
+
+function countToZero(event){
+    event.preventDefault();
+    count = 0;
+    $('#connectionCount').text(count);
 }
 
 $(prepLists);
