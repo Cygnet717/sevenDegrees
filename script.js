@@ -71,34 +71,36 @@ function Alphabetize(a, b) {
 
 function generateChallenge (event){
     event.preventDefault()
-    let paramOptionsOne = ['genderOne', 'eraOne'];
-    let paramOptionsTwo = ['genderTwo', 'eraTwo'];
+    let paramOptions = ['nameOne', 'genderOne', 'eraOne', 'genderTwo', 'eraTwo'];
     let resultA = '';
     let resultB = '';
-    //find resultA
-    if($('#nameOne').val() !== ""){ //if name is true set name, done
-        resultA = $('#nameOne').val();
-        } else {
-            
-        }
-        
-     
+    let userParams = [];
     
-    /*if($('#nameOne').val() !== ""){
-        resultA = $('#nameOne').val();
-    } else if ($(`#genderOne`).val() ===) {
-
-    }
-
     for(let i=0; i<paramOptions.length; i++){
         if($(`#${paramOptions[i]}`).val() !== ""){
-            console.log($(`#${paramOptions[i]}`).val())
-            //use this to randomly pick names from list
+            let obj = {};
+            let varName = paramOptions[i];
+            let varValue = $(`#${paramOptions[i]}`).val();
+            obj[varName] = varValue;
+            userParams.push (obj);
         }
-    }*/
+    }
+    console.log(userParams.length)
+    if(userParams.length === 0) {
+        resultA = findRandomName();
+        resultB = findRandomName();
+    } else {
+        //use params to pare down search
+        console.log('to be built')
+    }
 
     return deliverResult(resultA, resultB)
 };
+
+function findRandomName(){
+    let rand = Math.floor(Math.random()*listActorNames.length)
+    return listActorNames[rand]
+}
 
 //return challenge to user
 function deliverResult(resultA, resultB){

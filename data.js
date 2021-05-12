@@ -1063,3 +1063,14 @@ const actors = [
         era: "new"
     }
 ]
+
+function checkList(event){
+    event.preventDefault();
+    let found = actors.find(a => a.name == $('#checkName').val());
+    if(found === undefined){
+        $('.checkResult').html(`<p>they are not on the list</p>`)
+    } else {
+        $('.checkResult').html(`<p>duh of course we have that person.</p>`)
+
+    }
+}
