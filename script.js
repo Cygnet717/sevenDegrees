@@ -85,7 +85,6 @@ function generateChallenge (event){
             userParams.push (obj);
         }
     }
-    console.log(userParams.length)
     if(userParams.length === 0) {
         resultA = findRandomName(listActorNames);
         resultB = findRandomName(listActorNames);
@@ -104,9 +103,11 @@ function findRandomName(list){
 
 //return challenge to user
 function deliverResult(resultA, resultB){
-    $('.result').html(`<div>Connect ${resultA} to ${resultB}</div>`)
+    $('.result').html(`<div>Connect ${resultA} to ${resultB}</div>`);
+    startTimer();
 }
 
+//connection counter for user
 let count = 0;
 function countConnection(event){
     event.preventDefault();
@@ -118,6 +119,26 @@ function countToZero(event){
     event.preventDefault();
     count = 0;
     $('#connectionCount').text(count);
+}
+
+var sec = 0;
+function pad ( val ) { 
+    return val > 9 ? val : "0" + val; 
+}
+
+//timer for challenge
+let interval = null;
+
+function startTimer(){
+    interval = setInterval(function (){
+        $("#seconds").html(pad(++sec%60));
+        $("#minutes").html(pad(parseInt(sec/60,10)));
+    }, 1000);
+}
+
+function stopTimer(event){
+    event.preventDefault();
+    clearInterval(interval);
 }
 
 $(prepLists);

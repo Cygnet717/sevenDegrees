@@ -59,12 +59,15 @@
 
     <div class="result">seven degree challenge</div>
     <div class="timerAndCounter">
-        <div>timer</div>
+        <div>timer
+            <label id="minutes">00</label>:<label id="seconds">00</label>
+            <button onClick='stopTimer(event)'>Stop</button>
+        </div>
         <div>
             connection counter 
             <button onClick='countConnection(event)'>Count</button>
             <button onClick='countToZero(event)'>Reset</button>
-            <div id="connectionCount"></div>
+            <div id="connectionCount">0</div>
         </div>
     </div>
 
