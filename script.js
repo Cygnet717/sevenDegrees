@@ -52,6 +52,13 @@ function Alphabetize(a, b) {
     return 0;
 }
 
+function fillNameDropdown(){
+    for(let i=0; i< listActorNames.length; i++){
+        $(`#nameOne`).append(`<option value='${listActorNames[i]}'>${listActorNames[i]}</option>`)
+    }
+    
+}
+
 //take user input to use in creating challenge
 
 function generateChallenge (event){
@@ -70,14 +77,14 @@ function generateChallenge (event){
             userParams.push (obj);
         }
     }
+    
     if(userParams.length === 0) {
         resultA = findRandomName(listActorNames);
         resultB = findRandomName(listActorNames);
     }
 
     if(userParams.find(i => i.nameOne)){
-        console.log(userParams[1].nameOne)
-        resultA = listActorNames.find(actor => actor.name === userParams.nameOne)
+        resultA = userParams[0].nameOne
     } else if(userParams.find(i => i.eraOne === 'new')){
         resultA = findRandomName(listActorNew)
     } else if(userParams.find(i => i.eraOne === 'classic')){
@@ -101,6 +108,11 @@ function findRandomName(list){
 //return challenge to user
 function deliverResult(resultA, resultB){
     $('.result').html(`<div>Connect ${resultA} to ${resultB}</div>`);
+    if(interval !== null){
+        clearInterval(interval);
+        $("#seconds").html(pad(++sec%60));
+        $("#minutes").html(pad(parseInt(sec/60,10)));
+    }
     startTimer();
 }
 
@@ -139,3 +151,4 @@ function stopTimer(event){
 }
 
 $(prepLists);
+$(fillNameDropdown);
