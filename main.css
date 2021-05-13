@@ -1,0 +1,60 @@
+h1 {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description {
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.example {
+    margin-bottom: 10px;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.ledgend{
+    text-align: center;
+}
+
+label{
+    padding: 5px;
+}
+
+.challengeButtons{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.result{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.timerAndCounter{
+    width: fit-content;
+    margin: 10px auto 10px auto;
+}
+
+.timerCounter{
+    width: fit-content;
+}
+
+.counter{
+    margin-top: 10px;
+}
+
+#connectionCount{
+    width: fit-content;
+    padding: 5px;
+    display: inline;
+}

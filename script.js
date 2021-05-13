@@ -1,4 +1,3 @@
-
 //preparing lists for random name generation
 let listActorNames = [];
 let listActorClassic = [];

@@ -11,15 +11,16 @@
   </head>
   <body>
     <h1>Seven Degrees</h1>
-    <p>Connect two actors through the movies them and others have been in.</p>
-    <div>
-        <div>Brad Pitt -> Mr. & Mrs. Smith -> Angelina Jolie -> The tourist -> Johnny Depp</div>
-        <div>2 steps from Brad Pitt to Johnny Depp</div>
+    <p class="description">Connect two actors through the movies them and others have been in.</p>
+    <div class ="example">
+        <div>Brad Pitt &rarr; Mr. & Mrs. Smith &rarr; Angelina Jolie &rarr; The tourist &rarr; Johnny Depp</div>
+        <br/>
+        <div class="description">2 steps from Brad Pitt to Johnny Depp</div>
     </div>
 
     <form>
         <fieldset>
-            <ledgend>Person One</ledgend>
+            <ledgend class='ledgend'>Person One</ledgend>
             <label for="nameOne">Name</label>
             <select id="nameOne" name="nameOne">
                 <option value=''>Select one</option>
@@ -33,7 +34,7 @@
             </select>
         </fieldset>
         <fieldset>
-            <ledgend>Person Two</ledgend>
+            <ledgend class='ledgend'>Person Two</ledgend>
             <label for="eraTwo">Era</label>
             <select id="eraTwo" name="eraTwo">
                 <option value=''>Select one</option>
@@ -41,26 +42,29 @@
                 <option value="classic">Classic</option>
             </select>
         </fieldset>
-        <button onClick="kevinBaconChallenge(event)">Kevin Bacon</button>
-        <input type="submit" value="Challenge" onClick="generateChallenge(event)"></input>
+        <div class="challengeButtons">
+            <button onClick="kevinBaconChallenge(event)">Kevin Bacon</button>
+            <input type="submit" value="Challenge" onClick="generateChallenge(event)"></input>
+        </div>
     </form>
 
     <div class="result">seven degree challenge</div>
     <div class="timerAndCounter">
-        <div>timer
+        <div>
+            <div class="timerCounter">Timer</div>
             <label id="minutes">00</label>:<label id="seconds">00</label>
             <button onClick='stopTimer(event)'>Stop</button>
         </div>
-        <div>
-            connection counter 
+        <div class="counter">
+            <div class="timerCounter">Connection Counter</div> 
+            <div id="connectionCount">0</div>
             <button onClick='countConnection(event)'>Count</button>
             <button onClick='countToZero(event)'>Reset</button>
-            <div id="connectionCount">0</div>
         </div>
     </div>
 
     <div>
-        is this person in the list?
+        Is this person in the list?
         <form id="checkList ">
             <input type="text" id="checkName"></input>
             <input type="submit" onClick="checkList(event)"/>
