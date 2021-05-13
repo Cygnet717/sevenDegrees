@@ -1,35 +1,28 @@
 const actorData =[
     {
         name: "Kevin Bacon",
-        gender: "male",
         era: "new"
     },
     {
         name: "test One",
-        gender: "male",
         era: "classic"
     },
     {
         name: "test Two",
-        gender: "female",
         era: "new"
     },
     {
         name: "test Three",
-        gender: "male",
         era: "new"
     },
     {
         name: "test Four",
-        gender: "female",
         era: "classic"
     }
 ];
 
 //preparing lists for random name generation
 let listActorNames = [];
-let listActorMale = [];
-let listActorFemale =[];
 let listActorClassic = [];
 let listActorNew = [];
 
@@ -38,14 +31,6 @@ function prepLists (){
         listActorNames.push(actorData[i].name)
     }
     listActorNames.sort(Alphabetize);
-
-    for(let i=0; i<actorData.length; i++){
-        if(actorData[i].gender === 'male'){
-            listActorMale.push(actorData[i].name)
-        } else {
-            listActorFemale.push(actorData[i].name)
-        }
-    }
 
     for(let i=0; i<actorData.length; i++){
         if(actorData[i].era === 'new'){
@@ -71,7 +56,7 @@ function Alphabetize(a, b) {
 
 function generateChallenge (event){
     event.preventDefault()
-    let paramOptions = ['nameOne', 'genderOne', 'eraOne', 'genderTwo', 'eraTwo'];
+    let paramOptions = ['nameOne','eraOne', 'eraTwo'];
     let resultA = '';
     let resultB = '';
     let userParams = [];
@@ -88,9 +73,21 @@ function generateChallenge (event){
     if(userParams.length === 0) {
         resultA = findRandomName(listActorNames);
         resultB = findRandomName(listActorNames);
-    } else {
-        //use params to pare down search
-        console.log('to be built')
+    }
+
+    if(userParams.find(i => i.nameOne)){
+        console.log(userParams[1].nameOne)
+        resultA = listActorNames.find(actor => actor.name === userParams.nameOne)
+    } else if(userParams.find(i => i.eraOne === 'new')){
+        resultA = findRandomName(listActorNew)
+    } else if(userParams.find(i => i.eraOne === 'classic')){
+        resultA = findRandomName(listActorClassic)
+    }
+    
+    if(userParams.find(i => i.eraTwo === 'new')){
+        resultB = findRandomName(listActorNew)
+    } else if(userParams.find(i => i.eraTwo === 'classic')){
+        resultB = findRandomName(listActorClassic)
     }
 
     return deliverResult(resultA, resultB)
