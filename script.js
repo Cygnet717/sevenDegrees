@@ -109,11 +109,12 @@ function findRandomName(list){
 function deliverResult(resultA, resultB){
     $('.result').html(`<div>Connect ${resultA} to ${resultB}</div>`);
     if(interval !== null){
-        clearInterval(interval);
-        $("#seconds").html(pad(++sec%60));
-        $("#minutes").html(pad(parseInt(sec/60,10)));
+        stopTimer();
+        sec = 0;
     }
     startTimer();
+    
+   
 }
 
 //connection counter for user
@@ -146,7 +147,10 @@ function startTimer(){
 }
 
 function stopTimer(event){
-    event.preventDefault();
+    if(event){
+         event.preventDefault();
+    }
+   
     clearInterval(interval);
 }
 
