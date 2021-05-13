@@ -1,25 +1,3 @@
-const actorData =[
-    {
-        name: "Kevin Bacon",
-        era: "new"
-    },
-    {
-        name: "test One",
-        era: "classic"
-    },
-    {
-        name: "test Two",
-        era: "new"
-    },
-    {
-        name: "test Three",
-        era: "new"
-    },
-    {
-        name: "test Four",
-        era: "classic"
-    }
-];
 
 //preparing lists for random name generation
 let listActorNames = [];
@@ -89,12 +67,18 @@ function generateChallenge (event){
         resultA = findRandomName(listActorNew)
     } else if(userParams.find(i => i.eraOne === 'classic')){
         resultA = findRandomName(listActorClassic)
+    } else {
+        resultA = findRandomName(listActorNames);
+
     }
     
     if(userParams.find(i => i.eraTwo === 'new')){
         resultB = findRandomName(listActorNew)
     } else if(userParams.find(i => i.eraTwo === 'classic')){
         resultB = findRandomName(listActorClassic)
+    } else {
+        resultB = findRandomName(listActorNames);
+
     }
 
     return deliverResult(resultA, resultB)
@@ -103,6 +87,15 @@ function generateChallenge (event){
 function findRandomName(list){
     let rand = Math.floor(Math.random()*list.length)
     return list[rand]
+}
+
+//create Kevin Bacon challenge
+function kevinBaconChallenge(event){
+    event.preventDefault();
+    let resultA = 'Kevin Bacon';
+    let resultB = findRandomName(listActorNames);
+
+    return deliverResult(resultA, resultB)
 }
 
 //return challenge to user

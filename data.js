@@ -1,8 +1,12 @@
-const actors = [
+const actorData = [
     {
         name: "Viggo Mortenson", 
         era: "new"
     }, 
+    {
+        name: "Kevin Bacon",
+        era: "new"
+    },
     {
         name: "Tom Hanks",
         era: "new"
@@ -849,7 +853,7 @@ const actors = [
         name: "Christopher Plummer", 
         era: "new"
     }
-]
+];
 
 function checkList(event){
     event.preventDefault();
