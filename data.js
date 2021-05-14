@@ -857,7 +857,7 @@ const actorData = [
 
 function checkList(event){
     event.preventDefault();
-    let found = actors.find(a => a.name == $('#checkName').val());
+    let found = actorData.find(a => a.name == $('#checkName').val());
     if(found === undefined){
         $('.checkResult').html(`<p>they are not on the list</p>`)
     } else {
