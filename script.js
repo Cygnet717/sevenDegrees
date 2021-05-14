@@ -142,8 +142,21 @@ function stopTimer(event){
     if(event){
          event.preventDefault();
     }
-   
     clearInterval(interval);
+}
+
+let isPaused = false;
+function togglePause(event){
+    event.preventDefault();
+    if(!isPaused){
+        clearInterval(interval);
+        $('#pauseButton').text('Start')
+    } else if(isPaused){
+        startTimer();
+        $('#pauseButton').text('Pause')
+
+    }
+isPaused = !isPaused
 }
 
 $(prepLists);
