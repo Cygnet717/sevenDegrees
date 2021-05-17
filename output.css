@@ -18,13 +18,14 @@ h1 {
   width: fit-content;
   padding: 3px;
   margin-bottom: 5px;
-  border: 1px solid black;
+  border: 1px solid #8cd2e9;
   font-family: "Montserrat", sans-serif;
 }
 
 .howTo {
   position: fixed;
   width: 100%;
+  text-align: center;
 }
 
 .description {
@@ -103,6 +104,33 @@ select {
 
 .listCheck {
   font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .timerCounter, fieldset, .timerAndCounter {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .howTo {
+    width: 50vw;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .description {
+    width: 50vw;
+  }
+
+  fieldset {
+    width: 45vw;
+  }
+
+  .timerAndCounter, .timerCounter {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */

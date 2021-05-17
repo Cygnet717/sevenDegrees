@@ -18,6 +18,12 @@ $nonBoldFont:  'Montserrat', sans-serif;
     width: $width;
 }
 
+@mixin transform($property){
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+
 h1 {
     @extend %center-margins;
     @extend %fadeBlue;
@@ -31,7 +37,7 @@ h1 {
     @include width(fit-content);
     padding: 3px;
     margin-bottom: 5px;
-    border: 1px solid black;
+    border: 1px solid $darkerBlue;
     font-family: $nonBoldFont;
 }
 
@@ -39,6 +45,7 @@ h1 {
     position: fixed;
     @extend %fadeBlue;
     @include width(100%);
+    text-align: center;
 }
 
 .description{
@@ -100,7 +107,7 @@ select {
 .timerAndCounter{
     @include width(50vw);
     margin: 10px auto 10px auto;
-
+    @extend %center-margin;
 }
 
 .timerCounter{
@@ -121,4 +128,35 @@ select {
 
 .listCheck {
     font-family: $nonBoldFont;
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+    %center-margin {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .howTo {
+        @include width(50vw);
+        left: 50%;
+        @include transform(translateX(-50%));
+    }
+
+    .description{
+        @include width(50vw);
+    }
+
+    fieldset {
+        @extend %center-margin;
+        width: 45vw;
+    }
+
+    .timerAndCounter, .timerCounter {
+        text-align: center;
+        @extend %center-margin;
+    }
 }
