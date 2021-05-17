@@ -1,4 +1,8 @@
 $lightBlue: #bddae4;
+$darkerBlue: #8cd2e9;
+$boldFont: 'Bebas Neue', cursive;
+$nonBoldFont:  'Montserrat', sans-serif;
+
 
 %center-margins {
     margin-left: auto;
@@ -19,6 +23,7 @@ h1 {
     @extend %fadeBlue;
     @include width(fit-content);
     padding: 5px;
+    font-family: $boldFont;
 }
 
 .show{
@@ -27,16 +32,24 @@ h1 {
     padding: 3px;
     margin-bottom: 5px;
     border: 1px solid black;
+    font-family: $nonBoldFont;
+}
+
+.howTo {
+    position: fixed;
+    @extend %fadeBlue;
+    @include width(100%);
 }
 
 .description{
     @extend %center-margins;
     @include width(70vw);
+    font-family: $nonBoldFont;
 }
 
 .example {
     margin-bottom: 10px;
-   
+    font-family: $nonBoldFont;
 }
 
 fieldset{
@@ -47,10 +60,12 @@ fieldset{
 }
 
 .ledgend{
+    font-family: $nonBoldFont;
     text-align: center;
 }
 
 label{
+    font-family: $nonBoldFont;
     padding: 5px;
 }
 
@@ -64,10 +79,22 @@ select {
     @include width(fit-content);
 }
 
+.button {
+    background-color: $lightBlue;
+    border: 1px solid $darkerBlue;
+    font-family: $nonBoldFont;
+}
+
+.challengeButton {
+    font-family: $boldFont;
+    font-size: large;
+}
+
 .result{
     @include width(100%);
     text-align: center;
     padding: 10px;
+    font-family: $nonBoldFont;
 }
 
 .timerAndCounter{
@@ -78,7 +105,7 @@ select {
 
 .timerCounter{
     @include width(fit-content);
-
+    font-family: $nonBoldFont;
 }
 
 .counter{
@@ -89,4 +116,9 @@ select {
     @include width(fit-content);
     padding: 5px;
     display: inline;
+    font-family: $nonBoldFont;
+}
+
+.listCheck {
+    font-family: $nonBoldFont;
 }

@@ -3,7 +3,7 @@
   margin-right: auto;
 }
 
-fieldset, h1 {
+fieldset, .howTo, h1 {
   border: 1px solid #bddae4;
   background-image: linear-gradient(#fdfdfd, #bddae4);
 }
@@ -11,6 +11,7 @@ fieldset, h1 {
 h1 {
   width: fit-content;
   padding: 5px;
+  font-family: "Bebas Neue", cursive;
 }
 
 .show {
@@ -18,14 +19,22 @@ h1 {
   padding: 3px;
   margin-bottom: 5px;
   border: 1px solid black;
+  font-family: "Montserrat", sans-serif;
+}
+
+.howTo {
+  position: fixed;
+  width: 100%;
 }
 
 .description {
   width: 70vw;
+  font-family: "Montserrat", sans-serif;
 }
 
 .example {
   margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
 }
 
 fieldset {
@@ -35,10 +44,12 @@ fieldset {
 }
 
 .ledgend {
+  font-family: "Montserrat", sans-serif;
   text-align: center;
 }
 
 label {
+  font-family: "Montserrat", sans-serif;
   padding: 5px;
 }
 
@@ -51,10 +62,22 @@ select {
   width: fit-content;
 }
 
+.button {
+  background-color: #bddae4;
+  border: 1px solid #8cd2e9;
+  font-family: "Montserrat", sans-serif;
+}
+
+.challengeButton {
+  font-family: "Bebas Neue", cursive;
+  font-size: large;
+}
+
 .result {
   width: 100%;
   text-align: center;
   padding: 10px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .timerAndCounter {
@@ -64,6 +87,7 @@ select {
 
 .timerCounter {
   width: fit-content;
+  font-family: "Montserrat", sans-serif;
 }
 
 .counter {
@@ -74,6 +98,11 @@ select {
   width: fit-content;
   padding: 5px;
   display: inline;
+  font-family: "Montserrat", sans-serif;
+}
+
+.listCheck {
+  font-family: "Montserrat", sans-serif;
 }
 
 /*# sourceMappingURL=output.css.map */

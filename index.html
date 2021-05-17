@@ -3,22 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SevenDegrees</title>
+    <title>SixDegrees</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="data.js"></script>
     <link href="output.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Seven Degrees</h1>
+    <h1>Six Degrees</h1>
     <div class='show'>How do I play this game?</div>
-    <div class='hidden'>
+    <div class='howTo'>
         <p class="description">Connect two actors through the movies them and others have been in.</p>
-        <div class ="example">
-            <div>Brad Pitt &rarr; Mr. & Mrs. Smith &rarr; Angelina Jolie &rarr; The tourist &rarr; Johnny Depp</div>
-            
-            <div class="description">2 steps from Brad Pitt to Johnny Depp</div>
-        </div>
+        <p class="description">Brad Pitt &rarr; Mr. & Mrs. Smith &rarr; Angelina Jolie &rarr; The tourist &rarr; Johnny Depp</p>   
+        <p class="description">2 steps from Brad Pitt to Johnny Depp</p>
+        <p  class="description">Click the Kevin Bacon button to try out <a target='_blank' href='https://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon'>Six Degrees of Kevin Bacon</a></p>
+        
     </div>
     <form>
         <fieldset>
@@ -45,32 +46,32 @@
             </select>
         </fieldset>
         <div class="challengeButtons">
-            <button onClick="kevinBaconChallenge(event)">Kevin Bacon</button>
-            <input type="submit" value="Challenge" onClick="generateChallenge(event)"></input>
+            <button class ='button challengeButton' onClick="kevinBaconChallenge(event)">Kevin Bacon</button>
+            <input class ='button challengeButton' type="submit" value="Challenge" onClick="generateChallenge(event)"></input>
         </div>
     </form>
 
-    <div class="result">Challenge</div>
+    <div class="result"></div>
     <div class="timerAndCounter">
         <div>
             <div class="timerCounter">Timer</div>
             <label id="minutes">00</label>:<label id="seconds">00</label>
-            <button onClick='stopTimer(event)'>Stop</button>
-            <button id="pauseButton" onClick='togglePause(event)'>Pause</button>
+            <button class ='button' onClick='stopTimer(event)'>Stop</button>
+            <button id="pauseButton" onClick='togglePause(event)' class ='button'>Pause</button>
         </div>
         <div class="counter">
             <div class="timerCounter">Connection Counter</div> 
             <div id="connectionCount">0</div>
-            <button onClick='countConnection(event)'>Count</button>
-            <button onClick='countToZero(event)'>Reset</button>
+            <button onClick='countConnection(event)' class ='button'>Count</button>
+            <button onClick='countToZero(event)' class ='button'>Reset</button>
         </div>
     </div>
 
-    <div>
+    <div class='listCheck'>
         Is this person in the list?
         <form id="checkList ">
             <input type="text" id="checkName"></input>
-            <input type="submit" onClick="checkList(event)"/>
+            <input type="submit" onClick="checkList(event)" class ='button'/>
         </form>
     </div>
     <div class="checkResult">

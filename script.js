@@ -164,12 +164,12 @@ isPaused = !isPaused
 
 function watchInstructionsClick(){
      $('.show').on('click', function(){
-        $('.hidden').toggle(500);
+        $('.howTo').toggle(500);
     })
 };
 
 function runPage(){
-    $('.hidden').hide();
+    $('.howTo').hide();
 
     prepLists();
     fillNameDropdown();
