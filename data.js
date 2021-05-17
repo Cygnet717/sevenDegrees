@@ -855,13 +855,19 @@ const actorData = [
     }
 ];
 
+function listCount(list){
+    console.log(`there are ${list.length} actors in the list`)
+}
+
 function checkList(event){
     event.preventDefault();
     let found = actorData.find(a => a.name == $('#checkName').val());
     if(found === undefined){
-        $('.checkResult').html(`<p>they are not on the list</p>`)
+        $('.checkResult').html(`<p>they are not on the list</p>`);
     } else {
         $('.checkResult').html(`<p>duh of course we have that person.</p>`)
 
     }
 }
+
+$(listCount(actorData));
