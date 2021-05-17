@@ -1,13 +1,20 @@
-h1 {
-    width: fit-content;
+%center-margins {
     margin-left: auto;
     margin-right: auto;
 }
 
-.description {
-    width: 70vw;
-    margin-left: auto;
-    margin-right: auto;
+@mixin width($width) {
+    width: $width;
+}
+
+h1 {
+    @extend %center-margins;
+    @include width(fit-content);
+}
+
+.description{
+    @extend %center-margins;
+    @include width(70vw);
 }
 
 .example {
@@ -29,25 +36,25 @@ label{
 }
 
 .challengeButtons{
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+    @extend %center-margins;
+    @include width(fit-content);
 }
 
 .result{
-    width: 100%;
+    @include width(100%);
     text-align: center;
     padding: 10px;
 }
 
 .timerAndCounter{
-    width: 50vw;
+    @include width(50vw);
     margin: 10px auto 10px auto;
 
 }
 
 .timerCounter{
-    width: fit-content;
+    @include width(fit-content);
+
 }
 
 .counter{
@@ -55,7 +62,7 @@ label{
 }
 
 #connectionCount{
-    width: fit-content;
+    @include width(fit-content);
     padding: 5px;
     display: inline;
 }
