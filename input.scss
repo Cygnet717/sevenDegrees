@@ -1,6 +1,13 @@
+$lightBlue: #bddae4;
+
 %center-margins {
     margin-left: auto;
     margin-right: auto;
+}
+
+%fadeBlue {
+    border: 1px solid $lightBlue;
+    background-image: linear-gradient(#fdfdfd, $lightBlue);
 }
 
 @mixin width($width) {
@@ -9,7 +16,17 @@
 
 h1 {
     @extend %center-margins;
+    @extend %fadeBlue;
     @include width(fit-content);
+    padding: 5px;
+}
+
+.show{
+    @extend %center-margins;
+    @include width(fit-content);
+    padding: 3px;
+    margin-bottom: 5px;
+    border: 1px solid black;
 }
 
 .description{
@@ -19,12 +36,14 @@ h1 {
 
 .example {
     margin-bottom: 10px;
+   
 }
 
 fieldset{
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+    @extend %fadeBlue;
 }
 
 .ledgend{
@@ -33,6 +52,11 @@ fieldset{
 
 label{
     padding: 5px;
+}
+
+select {
+    padding: 3px;
+    border: none;
 }
 
 .challengeButtons{

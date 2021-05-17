@@ -57,7 +57,7 @@ function generateChallenge (event){
     
     if(userParams.length === 0) {
         resultA = findRandomName(listActorNames);
-        resultB = findRandomName(listActorNames);
+        resultB = findRandomName(listActorNames, resultA);
     }
 
     if(userParams.find(i => i.nameOne)){
@@ -72,19 +72,21 @@ function generateChallenge (event){
     }
     
     if(userParams.find(i => i.eraTwo === 'new')){
-        resultB = findRandomName(listActorNew)
+        resultB = findRandomName(listActorNew, resultA)
     } else if(userParams.find(i => i.eraTwo === 'classic')){
-        resultB = findRandomName(listActorClassic)
+        resultB = findRandomName(listActorClassic, resultA)
     } else {
-        resultB = findRandomName(listActorNames);
+        resultB = findRandomName(listActorNames, resultA);
 
     }
 
     return deliverResult(resultA, resultB)
 };
 
-function findRandomName(list){
+function findRandomName(list, excluded){
+
     let rand = Math.floor(Math.random()*list.length)
+    if(list[rand] === excluded) rand++;
     return list[rand]
 }
 
@@ -92,14 +94,15 @@ function findRandomName(list){
 function kevinBaconChallenge(event){
     event.preventDefault();
     let resultA = 'Kevin Bacon';
-    let resultB = findRandomName(listActorNames);
+    let resultB = findRandomName(listActorNames, resultA);
 
     return deliverResult(resultA, resultB)
 }
 
 //return challenge to user
 function deliverResult(resultA, resultB){
-    $('.result').html(`<div>Connect ${resultA} to ${resultB}</div>`);
+    $('.result').empty();
+    $('.result').append(`Challenge:  Connect ${resultA} to ${resultB}`);
     if(interval !== null){
         stopTimer();
         sec = 0;
@@ -157,7 +160,20 @@ function togglePause(event){
 
     }
 isPaused = !isPaused
-}
+};
 
-$(prepLists);
-$(fillNameDropdown);
+function watchInstructionsClick(){
+     $('.show').on('click', function(){
+        $('.hidden').toggle(500);
+    })
+};
+
+function runPage(){
+    $('.hidden').hide();
+
+    prepLists();
+    fillNameDropdown();
+    watchInstructionsClick();
+};
+
+$(runPage);

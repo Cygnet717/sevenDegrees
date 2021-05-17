@@ -1,10 +1,23 @@
-.challengeButtons, .description, h1 {
+.challengeButtons, .description, .show, h1 {
   margin-left: auto;
   margin-right: auto;
 }
 
+fieldset, h1 {
+  border: 1px solid #bddae4;
+  background-image: linear-gradient(#fdfdfd, #bddae4);
+}
+
 h1 {
   width: fit-content;
+  padding: 5px;
+}
+
+.show {
+  width: fit-content;
+  padding: 3px;
+  margin-bottom: 5px;
+  border: 1px solid black;
 }
 
 .description {
@@ -27,6 +40,11 @@ fieldset {
 
 label {
   padding: 5px;
+}
+
+select {
+  padding: 3px;
+  border: none;
 }
 
 .challengeButtons {
