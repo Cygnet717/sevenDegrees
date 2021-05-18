@@ -852,6 +852,18 @@ const actorData = [
     {
         name: "Christopher Plummer", 
         era: "new"
+    },
+    {
+        name: "James Dean",
+        era: "classic"
+    },
+    {
+        name: "Cary Grant",
+        era: "classic"
+    },
+    {
+        name: "Elizabeth Taylor",
+        era: "classic"
     }
 ];
 

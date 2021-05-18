@@ -130,6 +130,10 @@ select {
     font-family: $nonBoldFont;
 }
 
+.textInput {
+    border: 1px solid black;
+}
+
 @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
