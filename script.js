@@ -102,7 +102,7 @@ function kevinBaconChallenge(event){
 //return challenge to user
 function deliverResult(resultA, resultB){
     $('.result').empty();
-    $('.result').append(`Challenge:  Connect ${resultA} to ${resultB}`);
+    $('.result').append(`Connect <b>${resultA}</b> to <b>${resultB}</b>`);
     if(interval !== null){
         stopTimer();
         sec = 0;
