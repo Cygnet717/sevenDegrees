@@ -120,12 +120,20 @@ select {
     transform: translateX(-50%);
   }
 
+  .show {
+    cursor: pointer;
+  }
+
   .description {
     width: 50vw;
   }
 
   fieldset {
     width: 45vw;
+  }
+
+  .button {
+    cursor: pointer;
   }
 
   .timerAndCounter, .timerCounter {

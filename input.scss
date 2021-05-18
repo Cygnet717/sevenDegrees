@@ -146,6 +146,10 @@ select {
         @include transform(translateX(-50%));
     }
 
+    .show {
+        cursor: pointer;
+    }
+
     .description{
         @include width(50vw);
     }
@@ -153,6 +157,10 @@ select {
     fieldset {
         @extend %center-margin;
         width: 45vw;
+    }
+
+    .button{
+        cursor: pointer;
     }
 
     .timerAndCounter, .timerCounter {

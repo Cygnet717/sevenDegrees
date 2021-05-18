@@ -163,7 +163,10 @@ isPaused = !isPaused
 };
 
 function watchInstructionsClick(){
-     $('.show').on('click', function(){
+    $('.show').on('click', function(){
+        $('.howTo').toggle(500);
+    });
+    $('.howTo').on('click', function(){
         $('.howTo').toggle(500);
     })
 };
