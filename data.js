@@ -136,10 +136,6 @@ const actorData = [
         era: "new"
     }, 
     {
-        name: "Josh Brolin", 
-        era: "new"
-    }, 
-    {
         name: "Ryan Reynolds", 
         era: "new"
     }, 
@@ -326,11 +322,7 @@ const actorData = [
     {
         name: "Steve Zahn", 
         era: "new"
-    }, 
-    {
-        name: "Peter Stormare", 
-        era: "new"
-    }, 
+    },  
     {
         name: "Philip Seymour Hoffman", 
         era: "new"
@@ -421,10 +413,6 @@ const actorData = [
     }, 
     {
         name: "Dana Carvey", 
-        era: "new"
-    }, 
-    {
-        name: "Rob Lowe", 
         era: "new"
     }, 
     {
@@ -658,11 +646,7 @@ const actorData = [
     {
         name: "Kevin Hart", 
         era: "new"
-    }, 
-    {
-        name: "Jack Black", 
-        era: "new"
-    }, 
+    },  
     {
         name: "Dwayne Johnson", 
         era: "new"
@@ -867,10 +851,6 @@ const actorData = [
     },
     {
         name: "Michael Caine",
-        era: "new"
-    },
-    {
-        name: "Sean Connery",
         era: "new"
     },
     {
@@ -1123,10 +1103,6 @@ const actorData = [
     },
     {
         name: "Jack Black",
-        era: "new"
-    },
-    {
-        name: "John Cusack",
         era: "new"
     },
     {
@@ -1498,10 +1474,6 @@ const actorData = [
         era: "new"
     },
     {
-        name: "Michael Douglas",
-        era: "new"
-    },
-    {
         name: "Kenny Baker",
         era: "new"
     },
@@ -1662,10 +1634,6 @@ const actorData = [
         era: "new"
     },
     {
-        name: "Nick Nolte",
-        era: "new"
-    },
-    {
         name: "Mickey Rourke",
         era: "new"
     },
@@ -1691,10 +1659,6 @@ const actorData = [
     },
     {
         name: "Josh Gad",
-        era: "new"
-    },
-    {
-        name: "Matthew Lillard",
         era: "new"
     },
     {

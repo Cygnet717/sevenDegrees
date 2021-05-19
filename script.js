@@ -8,6 +8,7 @@ function prepLists (){
         listActorNames.push(actorData[i].name)
     }
     listActorNames.sort(Alphabetize);
+    
 
     for(let i=0; i<actorData.length; i++){
         if(actorData[i].era === 'new'){
@@ -180,12 +181,22 @@ function watchInstructionsClick(){
     })
 };
 
+function checkListForDuplicates(list){
+    let duplicateNames = []
+    for(let i=0; i < list.length; i++) {
+        if(list[i] === list[i+1]){
+            duplicateNames.push(list[i])
+        }
+    }
+    console.log(duplicateNames)
+};
+
 function runPage(){
     $('.howTo').hide();
-
     prepLists();
     fillNameDropdown();
     watchInstructionsClick();
+    checkListForDuplicates(listActorNames);
 };
 
 $(runPage);
