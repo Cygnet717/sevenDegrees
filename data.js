@@ -864,7 +864,1149 @@ const actorData = [
     {
         name: "Elizabeth Taylor",
         era: "classic"
-    }
+    },
+    {
+        name: "Michael Caine",
+        era: "new"
+    },
+    {
+        name: "Sean Connery",
+        era: "new"
+    },
+    {
+        name: "Javier Bardem",
+        era: "new"
+    },
+    {
+        name: "Josh Brolin",
+        era: "new"
+    },
+    {
+        name: "Scarlett Johansson",
+        era: "new"
+    },
+    {
+        name: "Natalie Portman",
+        era: "new"
+    },
+    {
+        name: "Jennifer Lawrence",
+        era: "new"
+    },
+    {
+        name: "Meryl Streep",
+        era: "new"
+    },
+    {
+        name: "Charlize Theron",
+        era: "new"
+    },
+    {
+        name: "Nicole Kidman",
+        era: "new"
+    },
+    {
+        name: "Sandra Bullock",
+        era: "new"
+    },
+    {
+        name: "Anne Hathaway",
+        era: "new"
+    },
+    {
+        name: "Emma Stone",
+        era: "new"
+    },
+    {
+        name: "Angelina Jolie",
+        era: "new"
+    },
+    {
+        name: "Julia Roberts",
+        era: "new"
+    },
+    {
+        name: "Cate Blanchett",
+        era: "new"
+    },
+    {
+        name: "Halle Berry",
+        era: "new"
+    },
+    {
+        name: "Kate Winslet",
+        era: "new"
+    },
+    {
+        name: "Emma Watson",
+        era: "new"
+    },
+    {
+        name: "Emily Blunt",
+        era: "new"
+    },
+    {
+        name: "Margot Robbie",
+        era: "new"
+    },
+    {
+        name: "Jennifer Aniston",
+        era: "new"
+    },
+    {
+        name: "Viola Davis",
+        era: "new"
+    },
+    {
+        name: "Keira Knightley",
+        era: "new"
+    },
+    {
+        name: "Jodie Foster",
+        era: "new"
+    },
+    {
+        name: "Amy Adams",
+        era: "new"
+    },
+    {
+        name: "Reese Witherspoon",
+        era: "new"
+    },
+    {
+        name: "Salma Hayek",
+        era: "new"
+    },
+    {
+        name: "Antonio Banderas",
+        era: "new"
+    },
+    {
+        name: "Carrie Fisher",
+        era: "new"
+    },
+    {
+        name: "Kat Dennings",
+        era: "new"
+    },
+    {
+        name: "Alan Tudyk",
+        era: "new"
+    },
+    {
+        name: "Jon Favreau",
+        era: "new"
+    },
+    {
+        name: "Ron Livingston",
+        era: "new"
+    },
+    {
+        name: "Heather Graham",
+        era: "new"
+    },
+    {
+        name: "Eric Bana",
+        era: "new"
+    },
+    {
+        name: "Scott Grimes",
+        era: "new"
+    },
+    {
+        name: "Damian Lewis",
+        era: "new"
+    },
+    {
+        name: "David Wenham",
+        era: "new"
+    },
+    {
+        name: "Lena Headey",
+        era: "new"
+    },
+    {
+        name: "Peter Dinklage",
+        era: "new"
+    },
+    {
+        name: "Tom Sizemore",
+        era: "new"
+    },
+    {
+        name: "Emilia Clarke",
+        era: "new"
+    },
+    {
+        name: "Sophie Turner",
+        era: "new"
+    },
+    {
+        name: "Nikolaj Coster-Waldau",
+        era: "new"
+    },
+    {
+        name: "Michael Keaton",
+        era: "new"
+    },
+    {
+        name: "Henry Cavill",
+        era: "new"
+    },
+    {
+        name: "Powers Boothe",
+        era: "new"
+    },
+    {
+        name: "Hugh Laurie",
+        era: "new"
+    },
+    {
+        name: "Oliver Platt",
+        era: "new"
+    },
+    {
+        name: "Nicholas Hoult",
+        era: "new"
+    },
+    {
+        name: "January Jones",
+        era: "new"
+    },
+    {
+        name: "Tyler Mane",
+        era: "new"
+    },
+    {
+        name: "Ray Park",
+        era: "new"
+    },
+    {
+        name: "Anna Paquin",
+        era: "new"
+    },
+    {
+        name: "Kristen Stewart",
+        era: "new"
+    },
+    {
+        name: "Robert Pattinson",
+        era: "new"
+    },
+    {
+        name: "Bill Nighy",
+        era: "new"
+    },
+    {
+        name: "Rowan Atkinson",
+        era: "new"
+    },
+    {
+        name: "James Marsden",
+        era: "new"
+    },
+    {
+        name: "Meg Ryan",
+        era: "new"
+    },
+    {
+        name: "Renee Zellweger",
+        era: "new"
+    },
+    {
+        name: "Brendon Gleeson",
+        era: "new"
+    },
+    {
+        name: "Richard Gere",
+        era: "new"
+    },
+    {
+        name: "Jack Black",
+        era: "new"
+    },
+    {
+        name: "John Cusack",
+        era: "new"
+    },
+    {
+        name: "Joan Cusack",
+        era: "new"
+    },
+    {
+        name: "Giovanni Ribisi",
+        era: "new"
+    },
+    {
+        name: "Donald Sutherland",
+        era: "new"
+    },
+    {
+        name: "Ray Winstone",
+        era: "new"
+    },
+    {
+        name: "Charlie Hunnam",
+        era: "new"
+    },
+    {
+        name: "Ethan Suplee",
+        era: "new"
+    },
+    {
+        name: "Kiefer Sutherland",
+        era: "new"
+    },
+    {
+        name: "John Corbett",
+        era: "new"
+    },
+    {
+        name: "Michael Rooker",
+        era: "new"
+    },
+    {
+        name: "Billy Zane",
+        era: "new"
+    },
+    {
+        name: "Buck Taylor",
+        era: "new"
+    },
+    {
+        name: "Robert Mitchum",
+        era: "classic"
+    },
+    {
+        name: "Billy Bob Thornton",
+        era: "new"
+    },
+    {
+        name: "Peter Stormare",
+        era: "new"
+    },
+    {
+        name: "Stellen Skarsgard",
+        era: "new"
+    },
+    {
+        name: "Thomas Haden Church",
+        era: "new"
+    },
+    {
+        name: "Eugene Levy",
+        era: "new"
+    },
+    {
+        name: "Warwick Davis",
+        era: "new"
+    },
+    {
+        name: "Leonardo DiCaprio",
+        era: "new"
+    },
+    {
+        name: "Willem Dafoe",
+        era: "new"
+    },
+    {
+        name: "Sean Penn",
+        era: "new"
+    },
+    {
+        name: "Christoph Waltz",
+        era: "new"
+    },
+    {
+        name: "Jared Leto",
+        era: "new"
+    },
+    {
+        name: "Tim Robbins",
+        era: "new"
+    },
+    {
+        name: "Elliot Page",
+        era: "new"
+    },
+    {
+        name: "Ken Watanabe",
+        era: "new"
+    },
+    {
+        name: "Tom Berenger",
+        era: "new"
+    },
+    {
+        name: "Pete Postlewaite",
+        era: "new"
+    },
+    {
+        name: "Marion Cotillard",
+        era: "new"
+    },
+    {
+        name: "Timothy Olyphant",
+        era: "new"
+    },
+    {
+        name: "Chris Pine",
+        era: "new"
+    },
+    {
+        name: "Ben Foster",
+        era: "new"
+    },
+    {
+        name: "Tommy Lee Jones",
+        era: "new"
+    },
+    {
+        name: "Isla Fisher",
+        era: "new"
+    },
+    {
+        name: "Jamie Lee Curtis",
+        era: "new"
+    },
+    {
+        name: "Gene Hackman",
+        era: "new"
+    },
+    {
+        name: "Anthony Hopkins",
+        era: "new"
+    },
+    {
+        name: "James Caan",
+        era: "new"
+    },
+    {
+        name: "Colin Farrell",
+        era: "new"
+    },
+    {
+        name: "Edward Furlong",
+        era: "new"
+    },
+    {
+        name: "Denholm Elliott",
+        era: "new"
+    },
+    {
+        name: "Richard Dreyfuss",
+        era: "new"
+    },
+    {
+        name: "Roy Scheider",
+        era: "new"
+    },
+    {
+        name: "Robert Shaw",
+        era: "new"
+    },
+    {
+        name: "Uma Thurman",
+        era: "new"
+    },
+    {
+        name: "Elizabeth Banks",
+        era: "new"
+    },
+    {
+        name: "Tina Fey",
+        era: "new"
+    },
+    {
+        name: "Jullianne Moore",
+        era: "new"
+    },
+    {
+        name: "Topher Grace",
+        era: "new"
+    },
+    {
+        name: "Danny Trejo",
+        era: "new"
+    },
+    {
+        name: "Laurence Fishburne",
+        era: "new"
+    },
+    {
+        name: "Carrie-Anne Moss",
+        era: "new"
+    },
+    {
+        name: "Hugo Weaving",
+        era: "new"
+    },
+    {
+        name: "Forest Whitaker",
+        era: "new"
+    },
+    {
+        name: "Andre Braugher",
+        era: "new"
+    },
+    {
+        name: "Brent Spiner",
+        era: "new"
+    },
+    {
+        name: "LeVar Burton",
+        era: "new"
+    },
+    {
+        name: "Nathan Fillion",
+        era: "new"
+    },
+    {
+        name: "Jewel Staite",
+        era: "new"
+    },
+    {
+        name: "Chiwetel Ejiofor",
+        era: "new"
+    },
+    {
+        name: "Gina Torres",
+        era: "new"
+    },
+    {
+        name: "Felicity Jones",
+        era: "new"
+    },
+    {
+        name: "Diego Luna",
+        era: "new"
+    },
+    {
+        name: "Donnie Yen",
+        era: "new"
+    },
+    {
+        name: "Mads Mikkelsen",
+        era: "new"
+    },
+    {
+        name: "Eddie Redmayne",
+        era: "new"
+    },
+    {
+        name: "Jon Hamm",
+        era: "new"
+    },
+    {
+        name: "David Thewlis",
+        era: "new"
+    },
+    {
+        name: "Emily Watson",
+        era: "new"
+    },
+    {
+        name: "Mark Strong",
+        era: "new"
+    },
+    {
+        name: "Michael Gambon",
+        era: "new"
+    },
+    {
+        name: "Tilda Swinton",
+        era: "new"
+    },
+    {
+        name: "Susan Sarandon",
+        era: "new"
+    },
+    {
+        name: "Laura Dern",
+        era: "new"
+    },
+    {
+        name: "Bruce Dern",
+        era: "new"
+    },
+    {
+        name: "Laura Linney",
+        era: "new"
+    },
+    {
+        name: "Judi Dench",
+        era: "new"
+    },
+    {
+        name: "Maggie Smith",
+        era: "new"
+    },
+    {
+        name: "Natalie Dormer",
+        era: "new"
+    },
+    {
+        name: "Jennifer Connelly",
+        era: "new"
+    },
+    {
+        name: "Helen Mirren",
+        era: "new"
+    },
+    {
+        name: "Milla Jovovich",
+        era: "new"
+    },
+    {
+        name: "Frances McDormand",
+        era: "new"
+    },
+    {
+        name: "Sam Rockwell",
+        era: "new"
+    },
+    {
+        name: "Sandra Oh",
+        era: "new"
+    },
+    {
+        name: "Hilary Swank",
+        era: "new"
+    },
+    {
+        name: "Anjelica Huston",
+        era: "new"
+    },
+    {
+        name: "Jean-Claude Van Damme",
+        era: "new"
+    },
+    {
+        name: "Raul Julia",
+        era: "new"
+    },
+    {
+        name: "Michael Gough",
+        era: "new"
+    },
+    {
+        name: "Helena Bonham Carter",
+        era: "new"
+    },
+    {
+        name: "Catherine Zeta-Jones",
+        era: "new"
+    },
+    {
+        name: "Michael Douglas",
+        era: "new"
+    },
+    {
+        name: "Kenny Baker",
+        era: "new"
+    },
+    {
+        name: "Richard Harris",
+        era: "new"
+    },
+    {
+        name: "Joaquin Phoenix",
+        era: "new"
+    },
+    {
+        name: "Robert Patrick",
+        era: "new"
+    },
+    {
+        name: "Robbie Coltrane",
+        era: "new"
+    },
+    {
+        name: "Joe Don Baker",
+        era: "new"
+    },
+    {
+        name: "John Hurt",
+        era: "new"
+    },
+    {
+        name: "Anthony Mackie",
+        era: "new"
+    },
+    {
+        name: "Sebastian Stan",
+        era: "new"
+    },
+    {
+        name: "Seth Green",
+        era: "new"
+    },
+    {
+        name: "Johnny Knoxville",
+        era: "new"
+    },
+    {
+        name: "Sean William Scott",
+        era: "new"
+    },
+    {
+        name: "Jason Biggs",
+        era: "new"
+    },
+    {
+        name: "Brian Cox",
+        era: "new"
+    },
+    {
+        name: "Jason Schwartzman",
+        era: "new"
+    },
+    {
+        name: "Donald Glover",
+        era: "new"
+    },
+    {
+        name: "Diane Lane",
+        era: "new"
+    },
+    {
+        name: "John Lithgow",
+        era: "new"
+    },
+    {
+        name: "Patrick Swayze",
+        era: "new"
+    },
+    {
+        name: "Howie Long",
+        era: "new"
+    },
+    {
+        name: "Maggie Gyllenhaal",
+        era: "new"
+    },
+    {
+        name: "Katie Holmes",
+        era: "new"
+    },
+    {
+        name: "Aaron Eckhart",
+        era: "new"
+    },
+    {
+        name: "Judd Nelson",
+        era: "new"
+    },
+    {
+        name: "Anthony Michael Hall",
+        era: "new"
+    },
+    {
+        name: "Eric Roberts",
+        era: "new"
+    },
+    {
+        name: "Julia Stiles",
+        era: "new"
+    },
+    {
+        name: "Joseph Gordon-Levitt",
+        era: "new"
+    },
+    {
+        name: "Allison Janney",
+        era: "new"
+    },
+    {
+        name: "Emilio Estevez",
+        era: "new"
+    },
+    {
+        name: "Molly Ringwald",
+        era: "new"
+    },
+    {
+        name: "Liv Tyler",
+        era: "new"
+    },
+    {
+        name: "Michael Cera",
+        era: "new"
+    },
+    {
+        name: "Mary Elizabeth Winstead",
+        era: "new"
+    },
+    {
+        name: "Aubrey Plaza",
+        era: "new"
+    },
+    {
+        name: "Anna Kendrick",
+        era: "new"
+    },
+    {
+        name: "Nick Offerman",
+        era: "new"
+    },
+    {
+        name: "Rob Lowe",
+        era: "new"
+    },
+    {
+        name: "Bradley Whitford",
+        era: "new"
+    },
+    {
+        name: "Emma Thompson",
+        era: "new"
+    },
+    {
+        name: "Nick Nolte",
+        era: "new"
+    },
+    {
+        name: "Mickey Rourke",
+        era: "new"
+    },
+    {
+        name: "Paul Giamatti",
+        era: "new"
+    },
+    {
+        name: "Richard Jenkins",
+        era: "new"
+    },
+    {
+        name: "Marisa Tomei",
+        era: "new"
+    },
+    {
+        name: "Kristen Bell",
+        era: "new"
+    },
+    {
+        name: "Dax Shepard",
+        era: "new"
+    },
+    {
+        name: "Josh Gad",
+        era: "new"
+    },
+    {
+        name: "Matthew Lillard",
+        era: "new"
+    },
+    {
+        name: "Dane Cook",
+        era: "new"
+    },
+    {
+        name: "Jimmy Stewart",
+        era: "classic"
+    },
+    {
+        name: "Jessica Simpson",
+        era: "new"
+    },
+    {
+        name: "Andy Dick",
+        era: "new"
+    },
+    {
+        name: "Michael Pena",
+        era: "new"
+    },
+    {
+        name: "Mary Steenburgen",
+        era: "new"
+    },
+    {
+        name: "Robert Redford",
+        era: "classic"
+    },
+    {
+        name: "Paul Newman",
+        era: "classic"
+    },
+    {
+        name: "Cloris Leachman",
+        era: "new"
+    },
+    {
+        name: "Gene Wilder",
+        era: "new"
+    },
+    {
+        name: "Chris Farley",
+        era: "new"
+    },
+    {
+        name: "Billy Dee Williams",
+        era: "new"
+    },
+    {
+        name: "Burt Reynolds",
+        era: "new"
+    },
+    {
+        name: "John Wayne",
+        era: "classic"
+    },
+    {
+        name: "Orson Welles",
+        era: "classic"
+    },
+    {
+        name: "Lea Thompson",
+        era: "new"
+    },
+    {
+        name: "Dennis Hopper",
+        era: "new"
+    },
+    {
+        name: "Geena Davis",
+        era: "new"
+    },
+    {
+        name: "Frank Langella",
+        era: "new"
+    },
+    {
+        name: "Cameron Diaz",
+        era: "new"
+    },
+    {
+        name: "Ian Holm",
+        era: "new"
+    },
+    {
+        name: "Toby Jones",
+        era: "new"
+    },
+    {
+        name: "Ian McShane",
+        era: "new"
+    },
+    {
+        name: "Marcia Gay Harden",
+        era: "new"
+    },
+    {
+        name: "William Sadler",
+        era: "new"
+    },
+    {
+        name: "Melissa McBride",
+        era: "new"
+    },
+    {
+        name: "Sean Patrick Flanery",
+        era: "new"
+    },
+    {
+        name: "Billy Connolly",
+        era: "new"
+    },
+    {
+        name: "Tim Curry",
+        era: "new"
+    },
+    {
+        name: "Brad Garrett",
+        era: "new"
+    },
+    {
+        name: "Johnny Galecki",
+        era: "new"
+    },
+    {
+        name: "Peter Falk",
+        era: "new"
+    },
+    {
+        name: "Robin Wright",
+        era: "new"
+    },
+    {
+        name: "Wallace Shawn",
+        era: "new"
+    },
+    {
+        name: "Fred Savage",
+        era: "new"
+    },
+    {
+        name: "Gary Sinise",
+        era: "new"
+    },
+    {
+        name: "Sally Field",
+        era: "new"
+    },
+    {
+        name: "Haley Joel Osment",
+        era: "new"
+    },
+    {
+        name: "Lauren Graham",
+        era: "new"
+    },
+    {
+        name: "Blake Lively",
+        era: "new"
+    },
+    {
+        name: "Alexis Bledel",
+        era: "new"
+    },
+    {
+        name: "Edward Hermann",
+        era: "new"
+    },
+    {
+        name: "Sean Gunn",
+        era: "new"
+    },
+    {
+        name: "Melissa McCarthy",
+        era: "new"
+    },
+    {
+        name: "Jessica Alba",
+        era: "new"
+    },
+    {
+        name: "Benicio Del Toro",
+        era: "new"
+    },
+    {
+        name: "Michael Clarke Duncan",
+        era: "new"
+    },
+    {
+        name: "Rosario Dawson",
+        era: "new"
+    },
+    {
+        name: "Rutger Hauer",
+        era: "new"
+    },
+    {
+        name: "Michael Madsen",
+        era: "new"
+    },
+    {
+        name: "Ellen DeGeneres",
+        era: "new"
+    },
+    {
+        name: "Stephen Root",
+        era: "new"
+    },
+    {
+        name: "Richard Kind",
+        era: "new"
+    },
+    {
+        name: "Julia Louis-Dreyfus",
+        era: "new"
+    },
+    {
+        name: "David Hyde Pierce",
+        era: "new"
+    },
+    {
+        name: "Denis Leary",
+        era: "new"
+    },
+    {
+        name: "Holly Hunter",
+        era: "new"
+    },
+    {
+        name: "Tobey Maguire ",
+        era: "new"
+    },
+    {
+        name: "Kirsten Dunst",
+        era: "new"
+    },
+    {
+        name: "James Franco",
+        era: "new"
+    },
+    {
+        name: "Joe Manganiello",
+        era: "new"
+    },
+    {
+        name: "Gwyneth Paltrow",
+        era: "new"
+    },
+    {
+        name: "Paul Bettany",
+        era: "new"
+    },
+    {
+        name: "Elizabeth Olson",
+        era: "new"
+    },
+    {
+        name: "Aaron Taylor-Johnson",
+        era: "new"
+    },
+    {
+        name: "James Spader",
+        era: "new"
+    },
+    {
+        name: "Olivia Wilde",
+        era: "new"
+    },
+    {
+        name: "Charlie Day",
+        era: "new"
+    },
+    {
+        name: "Ed Helms",
+        era: "new"
+    },
+    {
+        name: "Zach Galifianakis",
+        era: "new"
+    },
+    {
+        name: "Martin Short",
+        era: "new"
+    },
+    {
+        name: "Leonard Nimoy",
+        era: "new"
+    },
+    {
+        name: "William Shatner",
+        era: "new"
+    },
+    {
+        name: "Stone Cold Steve Austin",
+        era: "new"
+    },
+    {
+        name: "Dolph Lundgren",
+        era: "new"
+    },
+    {
+        name: "Wesley Snipes",
+        era: "new"
+    },
+    {
+        name: "Patton Oswalt",
+        era: "new"
+        },
+        
+        
 ];
 
 function listCount(list){

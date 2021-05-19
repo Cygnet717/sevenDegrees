@@ -106,10 +106,19 @@ function deliverResult(resultA, resultB){
     if(interval !== null){
         stopTimer();
         sec = 0;
+        $("#seconds").html(pad(++sec%60));
+        $("#minutes").html(pad(parseInt(sec/60,10)));
+    }
+    if(count > 0){
+        count = 0;
+        $('#connectionCount').text(count);
+    }
+    if(isPaused){
+        isPaused = false;
+        $('#pauseButton').text('Pause')
     }
     startTimer();
-    
-   
+
 }
 
 //connection counter for user
