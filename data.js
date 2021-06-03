@@ -1,23 +1,28 @@
 const actorData = [
     {
         name: "Viggo Mortenson", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Kevin Bacon",
-        era: "new"
+        era: "new",
+        difficulty: "medium"
     },
     {
         name: "Tom Hanks",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Sean Bean", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Ian Mckellen", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Karl Urban", 
@@ -29,15 +34,18 @@ const actorData = [
     }, 
     {
         name: "Christopher Lee", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Elijah Wood", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Sean Astin", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Billy Boyd", 
@@ -49,27 +57,33 @@ const actorData = [
     }, 
     {
         name: "Gary Oldman", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Heath Ledger", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Tom Hardy", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Orlando Bloom", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Christian Bale", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Liam Neeson", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Tom Wilkinson", 
@@ -93,39 +107,48 @@ const actorData = [
     }, 
     {
         name: "Robert Downey Jr", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Chris Hemsworth", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Mark Ruffolo", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Jeremy Renner", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Paul Rudd", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Chris Evans", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Chris Pratt", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Bradley Cooper", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Robert DeNiro", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Kurt Russell", 
@@ -133,23 +156,28 @@ const actorData = [
     }, 
     {
         name: "Vin Diesel", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Ryan Reynolds", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Ryan Gosling", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Will Ferrell", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "John C. Reilly", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "John C. McGinley", 
@@ -161,23 +189,28 @@ const actorData = [
     }, 
     {
         name: "Ewen McGregor", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "James McAvoy", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Michael Fassbender", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Channing Tatum", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Samuel L. Jackson", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Alfred Molina", 
@@ -189,11 +222,13 @@ const actorData = [
     }, 
     {
         name: "Ethan Hawke", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Denzel Washington", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Matthew Broderick", 
@@ -205,7 +240,8 @@ const actorData = [
     }, 
     {
         name: "Morgan Freeman", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Mandy Patankin", 
@@ -217,11 +253,13 @@ const actorData = [
     }, 
     {
         name: "Nicolas Cage", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "John Malkovich", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Colm Meaney", 
@@ -233,15 +271,18 @@ const actorData = [
     }, 
     {
         name: "John Travolta", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Bruce Willis", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Alan Rickman", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Jeremy Irons", 
@@ -249,7 +290,8 @@ const actorData = [
     }, 
     {
         name: "Mel Gibson", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Jason Issacs", 
@@ -257,7 +299,8 @@ const actorData = [
     }, 
     {
         name: "Adam Baldwin", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Chris Cooper", 
@@ -269,11 +312,13 @@ const actorData = [
     }, 
     {
         name: "Daniel Day-Lewis", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Daniel Craig", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Pierce Brosnan", 
@@ -281,11 +326,13 @@ const actorData = [
     }, 
     {
         name: "Sean Connery", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Harrison Ford", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "John Rhys-Davies", 
@@ -301,7 +348,8 @@ const actorData = [
     }, 
     {
         name: "Jeff Bridges", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Lloyd Bridges", 
@@ -329,11 +377,13 @@ const actorData = [
     }, 
     {
         name: "Adam Sandler", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Mark Wahlberg", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Mark Hamill", 
@@ -361,7 +411,8 @@ const actorData = [
     }, 
     {
         name: "Jim Carrey", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Jeff Daniels", 
@@ -381,11 +432,13 @@ const actorData = [
     }, 
     {
         name: "Dustin Hoffman", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Tom Cruise", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Michael Biehn", 
@@ -405,11 +458,13 @@ const actorData = [
     }, 
     {
         name: "Steve Martin", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Mike Meyers", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Dana Carvey", 
@@ -433,7 +488,8 @@ const actorData = [
     }, 
     {
         name: "Jackie Chan", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Chris Tucker", 
@@ -441,7 +497,8 @@ const actorData = [
     }, 
     {
         name: "Owen Wilson", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Luke Wilson", 
@@ -449,7 +506,8 @@ const actorData = [
     }, 
     {
         name: "Bill Murrey", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Chevy Chase", 
@@ -465,19 +523,23 @@ const actorData = [
     }, 
     {
         name: "Arnold Schwarzenegger", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Jason Statham", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Matt Damon", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Jason Momoa", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Jason Sudeikis", 
@@ -525,19 +587,23 @@ const actorData = [
     }, 
     {
         name: "Ben Affleck", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Josh Hartnett", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Jeffery Dean Morgan", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Gerard Butler", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Jamie Foxx", 
@@ -549,11 +615,13 @@ const actorData = [
     }, 
     {
         name: "Brad Pitt", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "George Clooney", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Tim Blake Nelson", 
@@ -569,11 +637,13 @@ const actorData = [
     }, 
     {
         name: "Edward Norton", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Johnny Depp", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Colin Firth", 
@@ -581,19 +651,23 @@ const actorData = [
     }, 
     {
         name: "Russell Crowe", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Alec Baldwin", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Ed Harris", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Kevin Spacy", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Al Pacino", 
@@ -621,7 +695,8 @@ const actorData = [
     }, 
     {
         name: "Michael J. Fox", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Christopher Lloyd", 
@@ -629,15 +704,18 @@ const actorData = [
     }, 
     {
         name: "Patrick Stewart", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Hugh Jackman", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Hugh Grant", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "George C. Scott", 
@@ -649,11 +727,13 @@ const actorData = [
     },  
     {
         name: "Dwayne Johnson", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Vince Vauhgn", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Geoffrey Rush", 
@@ -665,15 +745,18 @@ const actorData = [
     }, 
     {
         name: "Keanu Reeves", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Ben Kingsley", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Jude Law", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Ralph Fiennes", 
@@ -681,7 +764,8 @@ const actorData = [
     }, 
     {
         name: "Brendan Fraser", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Dennis Quaid", 
@@ -693,11 +777,13 @@ const actorData = [
     }, 
     {
         name: "Jake Gyllenhaal", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Will Smith", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Will Arnett", 
@@ -745,9 +831,12 @@ const actorData = [
     }, 
     {
         name: "Bill Pullman", 
-        era: "new"}, 
-    {name: "Jeff Goldblum", 
         era: "new"
+    }, 
+    {
+        name: "Jeff Goldblum", 
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Sam Neill", 
@@ -759,11 +848,13 @@ const actorData = [
     }, 
     {
         name: "Clive Owen", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Adam Driver", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Martin Freeman", 
@@ -783,11 +874,13 @@ const actorData = [
     }, 
     {
         name: "Benedict Cumberbatch", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Ben Stiller", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Justin Long", 
@@ -795,11 +888,13 @@ const actorData = [
     }, 
     {
         name: "Seth Rogan", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Steve Carell", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Kevin Smith", 
@@ -807,7 +902,8 @@ const actorData = [
     }, 
     {
         name: "Jack Nicholson", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Rip Torn", 
@@ -827,15 +923,18 @@ const actorData = [
     }, 
     {
         name: "Danny DeVito", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Christopher Walken", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     }, 
     {
         name: "Christopher Plummer", 
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "James Dean",
@@ -851,7 +950,8 @@ const actorData = [
     },
     {
         name: "Michael Caine",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Javier Bardem",
@@ -863,35 +963,43 @@ const actorData = [
     },
     {
         name: "Scarlett Johansson",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Natalie Portman",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Jennifer Lawrence",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Meryl Streep",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Charlize Theron",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Nicole Kidman",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Sandra Bullock",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Anne Hathaway",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Emma Stone",
@@ -899,15 +1007,18 @@ const actorData = [
     },
     {
         name: "Angelina Jolie",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Julia Roberts",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Cate Blanchett",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Halle Berry",
@@ -915,7 +1026,8 @@ const actorData = [
     },
     {
         name: "Kate Winslet",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Emma Watson",
@@ -923,7 +1035,8 @@ const actorData = [
     },
     {
         name: "Emily Blunt",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Margot Robbie",
@@ -939,7 +1052,8 @@ const actorData = [
     },
     {
         name: "Keira Knightley",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Jodie Foster",
@@ -955,11 +1069,13 @@ const actorData = [
     },
     {
         name: "Salma Hayek",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Antonio Banderas",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Carrie Fisher",
@@ -1007,7 +1123,8 @@ const actorData = [
     },
     {
         name: "Peter Dinklage",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Tom Sizemore",
@@ -1067,7 +1184,8 @@ const actorData = [
     },
     {
         name: "Kristen Stewart",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Robert Pattinson",
@@ -1087,11 +1205,13 @@ const actorData = [
     },
     {
         name: "Meg Ryan",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Renee Zellweger",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Brendon Gleeson",
@@ -1099,11 +1219,13 @@ const actorData = [
     },
     {
         name: "Richard Gere",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Jack Black",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Joan Cusack",
@@ -1115,7 +1237,8 @@ const actorData = [
     },
     {
         name: "Donald Sutherland",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Ray Winstone",
@@ -1179,15 +1302,18 @@ const actorData = [
     },
     {
         name: "Leonardo DiCaprio",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Willem Dafoe",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Sean Penn",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Christoph Waltz",
@@ -1223,11 +1349,13 @@ const actorData = [
     },
     {
         name: "Timothy Olyphant",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Chris Pine",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Ben Foster",
@@ -1235,7 +1363,8 @@ const actorData = [
     },
     {
         name: "Tommy Lee Jones",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Isla Fisher",
@@ -1251,7 +1380,8 @@ const actorData = [
     },
     {
         name: "Anthony Hopkins",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "James Caan",
@@ -1259,7 +1389,8 @@ const actorData = [
     },
     {
         name: "Colin Farrell",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Edward Furlong",
@@ -1283,7 +1414,8 @@ const actorData = [
     },
     {
         name: "Uma Thurman",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Elizabeth Banks",
@@ -1295,7 +1427,8 @@ const actorData = [
     },
     {
         name: "Jullianne Moore",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Topher Grace",
@@ -1407,15 +1540,18 @@ const actorData = [
     },
     {
         name: "Laura Linney",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Judi Dench",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Maggie Smith",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Natalie Dormer",
@@ -1427,7 +1563,8 @@ const actorData = [
     },
     {
         name: "Helen Mirren",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Milla Jovovich",
@@ -1447,7 +1584,8 @@ const actorData = [
     },
     {
         name: "Hilary Swank",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Anjelica Huston",
@@ -1467,11 +1605,13 @@ const actorData = [
     },
     {
         name: "Helena Bonham Carter",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Catherine Zeta-Jones",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Kenny Baker",
@@ -1483,7 +1623,8 @@ const actorData = [
     },
     {
         name: "Joaquin Phoenix",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Robert Patrick",
@@ -1539,7 +1680,8 @@ const actorData = [
     },
     {
         name: "Diane Lane",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "John Lithgow",
@@ -1583,7 +1725,8 @@ const actorData = [
     },
     {
         name: "Joseph Gordon-Levitt",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Allison Janney",
@@ -1599,7 +1742,8 @@ const actorData = [
     },
     {
         name: "Liv Tyler",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Michael Cera",
@@ -1651,7 +1795,8 @@ const actorData = [
     },
     {
         name: "Kristen Bell",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Dax Shepard",
@@ -1739,7 +1884,8 @@ const actorData = [
     },
     {
         name: "Cameron Diaz",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Ian Holm",
@@ -1819,7 +1965,8 @@ const actorData = [
     },
     {
         name: "Blake Lively",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Alexis Bledel",
@@ -1839,7 +1986,8 @@ const actorData = [
     },
     {
         name: "Jessica Alba",
-        era: "new"
+        era: "new",
+        difficulty: "easy" 
     },
     {
         name: "Benicio Del Toro",
@@ -1895,11 +2043,13 @@ const actorData = [
     },
     {
         name: "Kirsten Dunst",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "James Franco",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Joe Manganiello",
@@ -1907,7 +2057,8 @@ const actorData = [
     },
     {
         name: "Gwyneth Paltrow",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Paul Bettany",
@@ -1915,7 +2066,8 @@ const actorData = [
     },
     {
         name: "Elizabeth Olson",
-        era: "new"
+        era: "new",
+        difficulty: "easy"
     },
     {
         name: "Aaron Taylor-Johnson",
@@ -1992,6 +2144,7 @@ const actorData = [
     {
         name: "Whoopi Goldberg",
         era: "new",
+        difficulty: "easy"
     },
     {
         name: "Eva Mendes",
@@ -2008,6 +2161,7 @@ const actorData = [
     {
         name: "Drew Barrymore",
         era: "new",
+        difficulty: "easy"
     },
     {
         name: "Humphrey Bogart",
@@ -2064,6 +2218,7 @@ const actorData = [
     {
         name: "Clint Eastwood",
         era: "new",
+        difficulty: "easy"
     },
     {
         name: "Julianne Moore",
@@ -2092,6 +2247,7 @@ const actorData = [
     {
         name: "Jennifer Lopez",
         era: "new",
+        difficulty: "easy"
     },
     {
         name: "Grace Kelly",
