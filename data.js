@@ -1968,9 +1968,139 @@ const actorData = [
     {
         name: "Patton Oswalt",
         era: "new"
-        },
-        
-        
+    },
+    {
+        name: "Tessa Thompson",
+        era: "new"
+    },
+    {
+        name: "Angela Bassett",
+        era: "new"
+    },
+    {
+        name: "Timothee Chalamet",
+        era: "new"
+    },
+    {
+        name: "Zoe Saldana",
+        era: "new",
+    },
+    {
+        name: "Octavia Spencer",
+        era: "new",
+    },
+    {
+        name: "Whoopi Goldberg",
+        era: "new",
+    },
+    {
+        name: "Eva Mendes",
+        era: "new",
+    },
+    {
+        name: "Michelle Rodriguez",
+        era: "new",
+    },
+    {
+        name: "Lucy Liu",
+        era: "new",
+    },
+    {
+        name: "Drew Barrymore",
+        era: "new",
+    },
+    {
+        name: "Humphrey Bogart",
+        era: "classic",
+    },
+    {
+        name: "Gary Cooper",
+        era: "classic",
+    },
+    {
+        name: "Clark Gable",
+        era: "classic",
+    },
+    {
+        name: "Marlon Brando",
+        era: "classic",
+    },
+    {
+        name: "James Stewart",
+        era: "classic",
+    },
+    {
+        name: "Laurence Olivier",
+        era: "classic",
+    },
+    {
+        name: "Henry Fonda",
+        era: "classic",
+    },
+    {
+        name: "Gregory Peck",
+        era: "classic",
+    },
+    {
+        name: "Katharine Hepburn",
+        era: "classic",
+    },
+    {
+        name: "Audrey Hepburn",
+        era: "classic",
+    },
+    {
+        name: "Errol Flynn",
+        era: "classic",
+    },
+    {
+        name: "Gene Kelly",
+        era: "classic",
+    },
+    {
+        name: "Marilyn Monroe",
+        era: "classic",
+    },
+    {
+        name: "Clint Eastwood",
+        era: "new",
+    },
+    {
+        name: "Julianne Moore",
+        era: "new",
+    },
+    {
+        name: "Glenn Close",
+        era: "new",
+    },  
+    {
+        name: "Judy Garland",
+        era: "classic",
+    },
+    {
+        name: "Kathy Bates",
+        era: "new",
+    },
+    {
+        name: "Michelle Pfeiffer",
+        era: "new",
+    },
+    {
+        name: "Sigourney Weaver",
+        era: "new",
+    },
+    {
+        name: "Jennifer Lopez",
+        era: "new",
+    },
+    {
+        name: "Grace Kelly",
+        era: "classic",
+    },
+    {
+        name: "Gal Gadot",
+        era: "new",
+    }
 ];
 
 function listCount(list){
