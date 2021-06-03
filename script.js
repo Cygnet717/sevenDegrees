@@ -119,7 +119,6 @@ function deliverResult(resultA, resultB){
         $('#pauseButton').text('Pause')
     }
     startTimer();
-
 }
 
 //connection counter for user
