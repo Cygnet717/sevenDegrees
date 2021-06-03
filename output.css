@@ -59,6 +59,10 @@ select {
   border: none;
 }
 
+.or {
+  text-align: center;
+}
+
 .challengeButtons {
   width: fit-content;
 }

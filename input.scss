@@ -81,6 +81,10 @@ select {
     border: none;
 }
 
+.or{
+    text-align: center;
+}
+
 .challengeButtons{
     @extend %center-margins;
     @include width(fit-content);
