@@ -2639,4 +2639,4 @@ function listCount(list){
     console.log(`there are ${list.length} actors in the list`)
 }
 
-$(listCount(actorData));
+//$(listCount(actorData));

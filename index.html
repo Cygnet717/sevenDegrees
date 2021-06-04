@@ -20,38 +20,25 @@
         <p class="description">Connect two actors through the movies them and others have been in.</p>
         <p class="description">Brad Pitt &rarr; Mr. & Mrs. Smith &rarr; Angelina Jolie &rarr; The tourist &rarr; Johnny Depp</p>   
         <p class="description">2 steps from Brad Pitt to Johnny Depp</p>
-        <p  class="description">Click the Kevin Bacon button to try out <a target='_blank' href='https://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon'>Six Degrees of Kevin Bacon</a></p>
-        
     </div>
     <form>
+        <div class="challengeButtons">
+            <p>pick your difficulty</p>
+            <button class ='button challengeButton' onClick="generateChallenge(event)">Level 1</button>
+            <button class ='button challengeButton' onClick="generateChallenge(event)">Level 2</button>
+            <button class ='button challengeButton' onClick="generateChallenge(event)">Level 3</button>
+            <button class ='button challengeButton' onClick="generateChallenge(event)">Level 4</button>
+            <button class ='button challengeButton' onClick="generateChallenge(event)">Level 5</button>
+        </div>
+        <p class='or'>-OR-</p>
         <fieldset>
-            <ledgend class='ledgend'>Person One</ledgend>
+            <ledgend class='ledgend'>Pick actor to connect to</ledgend>
             <label for="nameOne">Name</label>
             <select id="nameOne" name="nameOne">
                 <option value=''>Select one</option>
-                
             </select>
-            <p class="or">-OR-</p>
-            <label for="eraOne">Era</label>
-            <select id="eraOne" name="eraOne">
-                <option value=''>Select one</option>
-                <option value="new">New</option>
-                <option value="classic">Classic</option>
-            </select>
-        </fieldset>
-        <fieldset>
-            <ledgend class='ledgend'>Person Two</ledgend>
-            <label for="eraTwo">Era</label>
-            <select id="eraTwo" name="eraTwo">
-                <option value=''>Select one</option>
-                <option value="new">New</option>
-                <option value="classic">Classic</option>
-            </select>
-        </fieldset>
-        <div class="challengeButtons">
-            <button class ='button challengeButton' onClick="kevinBaconChallenge(event)">Kevin Bacon</button>
             <button class ='button challengeButton' onClick="generateChallenge(event)">Challenge</button>
-        </div>
+        </fieldset>
     </form>
 
     <div class="result"></div>

@@ -1,7 +1,8 @@
 //preparing lists for random name generation
 let listActorNames = [];
-let listActorClassic = [];
-let listActorNew = [];
+let listActorEasy = [];
+let listActorMedium = [];
+let listActorHard  = [];
 
 function prepLists (){
     for(let i=0; i<actorData.length; i++){
@@ -11,10 +12,12 @@ function prepLists (){
     
 
     for(let i=0; i<actorData.length; i++){
-        if(actorData[i].era === 'new'){
-            listActorNew.push(actorData[i].name)
-        } else {
-            listActorClassic.push(actorData[i].name)
+        if(actorData[i].difficulty === 'easy'){
+            listActorEasy.push(actorData[i].name)
+        } else if(actorData[i].difficulty === 'medium') {
+            listActorMedium.push(actorData[i].name)
+        } else if(actorData[i].difficulty === 'hard'){
+            listActorHard.push(actorData[i].name)
         }
     }
 }
@@ -41,45 +44,20 @@ function fillNameDropdown(){
 
 function generateChallenge (event){
     event.preventDefault()
-    let paramOptions = ['nameOne','eraOne', 'eraTwo'];
     let resultA = '';
     let resultB = '';
-    let userParams = [];
     
-    for(let i=0; i<paramOptions.length; i++){
-        if($(`#${paramOptions[i]}`).val() !== ""){
-            let obj = {};
-            let varName = paramOptions[i];
-            let varValue = $(`#${paramOptions[i]}`).val();
-            obj[varName] = varValue;
-            userParams.push (obj);
-        }
-    }
-    
-    if(userParams.length === 0) {
-        resultA = findRandomName(listActorNames);
+    if($(`#nameOne`).val()) {
+        resultA = $(`#nameOne`).val();
         resultB = findRandomName(listActorNames, resultA);
     }
+ //check for dificulty picked
+ //highlight difficulty selected
 
-    if(userParams.find(i => i.nameOne)){
-        resultA = userParams[0].nameOne
-    } else if(userParams.find(i => i.eraOne === 'new')){
-        resultA = findRandomName(listActorNew)
-    } else if(userParams.find(i => i.eraOne === 'classic')){
-        resultA = findRandomName(listActorClassic)
-    } else {
-        resultA = findRandomName(listActorNames);
-
-    }
-    
-    if(userParams.find(i => i.eraTwo === 'new')){
-        resultB = findRandomName(listActorNew, resultA)
-    } else if(userParams.find(i => i.eraTwo === 'classic')){
-        resultB = findRandomName(listActorClassic, resultA)
-    } else {
-        resultB = findRandomName(listActorNames, resultA);
-
-    }
+    // result A
+    // 1 or 2  easy,  3 or 4 med, 5 hard
+    //result B
+    // 1 easy, 2 or 3 med, 4 or 5 hard
 
     return deliverResult(resultA, resultB)
 };
@@ -89,15 +67,6 @@ function findRandomName(list, excluded){
     let rand = Math.floor(Math.random()*list.length)
     if(list[rand] === excluded) rand++;
     return list[rand]
-}
-
-//create Kevin Bacon challenge
-function kevinBaconChallenge(event){
-    event.preventDefault();
-    let resultA = 'Kevin Bacon';
-    let resultB = findRandomName(listActorNames, resultA);
-
-    return deliverResult(resultA, resultB)
 }
 
 //return challenge to user
@@ -187,7 +156,7 @@ function checkListForDuplicates(list){
             duplicateNames.push(list[i])
         }
     }
-    console.log(duplicateNames)
+    console.log('duplicate names:' + duplicateNames)
 };
 
 function runPage(){
@@ -195,7 +164,7 @@ function runPage(){
     prepLists();
     fillNameDropdown();
     watchInstructionsClick();
-    checkListForDuplicates(listActorNames);
+    //checkListForDuplicates(listActorNames);
 };
 
 $(runPage);
