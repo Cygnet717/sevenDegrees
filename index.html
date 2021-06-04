@@ -24,11 +24,11 @@
     <form>
         <div class="challengeButtons">
             <p>pick your difficulty</p>
-            <button class ='button challengeButton' onClick="generateChallenge(event)">Level 1</button>
-            <button class ='button challengeButton' onClick="generateChallenge(event)">Level 2</button>
-            <button class ='button challengeButton' onClick="generateChallenge(event)">Level 3</button>
-            <button class ='button challengeButton' onClick="generateChallenge(event)">Level 4</button>
-            <button class ='button challengeButton' onClick="generateChallenge(event)">Level 5</button>
+            <button class ='button challengeButton' onClick="generateDifficultyChallenge(event, 1)">Level 1</button>
+            <button class ='button challengeButton' onClick="generateDifficultyChallenge(event, 2)">Level 2</button>
+            <button class ='button challengeButton' onClick="generateDifficultyChallenge(event, 3)">Level 3</button>
+            <button class ='button challengeButton' onClick="generateDifficultyChallenge(event, 4)">Level 4</button>
+            <button class ='button challengeButton' onClick="generateDifficultyChallenge(event, 5)">Level 5</button>
         </div>
         <p class='or'>-OR-</p>
         <fieldset>
@@ -37,7 +37,7 @@
             <select id="nameOne" name="nameOne">
                 <option value=''>Select one</option>
             </select>
-            <button class ='button challengeButton' onClick="generateChallenge(event)">Challenge</button>
+            <button class ='button challengeButton' onClick="generateNameChallenge(event)">Challenge</button>
         </fieldset>
     </form>
 

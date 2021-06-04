@@ -42,7 +42,7 @@ function fillNameDropdown(){
 
 //take user input to use in creating challenge
 
-function generateChallenge (event){
+function generateNamedChallenge (event){
     event.preventDefault()
     let resultA = '';
     let resultB = '';
@@ -51,16 +51,42 @@ function generateChallenge (event){
         resultA = $(`#nameOne`).val();
         resultB = findRandomName(listActorNames, resultA);
     }
- //check for dificulty picked
- //highlight difficulty selected
-
-    // result A
-    // 1 or 2  easy,  3 or 4 med, 5 hard
-    //result B
-    // 1 easy, 2 or 3 med, 4 or 5 hard
 
     return deliverResult(resultA, resultB)
 };
+
+function generateDifficultyChallenge (event, level){
+    event.preventDefault();
+    let resultA = '';
+    let resultB = '';
+
+ //highlight difficulty selected
+
+    switch(level){
+        case 1:
+            resultA = findRandomName(listActorEasy);
+            resultB = findRandomName(listActorEasy, resultA);
+            break;
+        case 2:
+            resultA = findRandomName(listActorEasy);
+            resultB = findRandomName(listActorMedium);
+            break;
+        case 3:
+            resultA = findRandomName(listActorMedium);
+            resultB = findRandomName(listActorMedium, resultA);
+            break;
+        case 4:
+            resultA = findRandomName(listActorMedium);
+            resultB = findRandomName(listActorHard);
+            break;
+        case 5:
+            resultA = findRandomName(listActorHard);
+            resultB = findRandomName(listActorHard, resultA);
+            break;
+    }
+   
+    return deliverResult(resultA, resultB)
+}
 
 function findRandomName(list, excluded){
 
