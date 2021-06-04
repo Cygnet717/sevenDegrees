@@ -62,7 +62,7 @@ function generateDifficultyChallenge (event, level){
     let resultA = '';
     let resultB = '';
 
-    $(event.target).siblings().removeClass('highlightButton');
+    $('.challengeButton').removeClass('highlightButton');
     $(event.target).addClass('highlightButton');
 
     switch(level){
@@ -88,6 +88,17 @@ function generateDifficultyChallenge (event, level){
             break;
     }
    
+    return deliverResult(resultA, resultB)
+}
+
+function generateRandomChallenge(event){
+    event.preventDefault();
+    $('.challengeButton').removeClass('highlightButton');
+    $(event.target).addClass('highlightButton');
+
+    resultA = findRandomName(listActorNames);
+    resultB = findRandomName(listActorNames, resultA);
+
     return deliverResult(resultA, resultB)
 }
 

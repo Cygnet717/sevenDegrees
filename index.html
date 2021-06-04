@@ -23,7 +23,7 @@
     </div>
     <form>
         <div class="challengeButtons">
-            <p>pick your difficulty</p>
+            <p class='or'>Pick Your Difficulty</p>
             <button class ='button challengeButton' onClick="generateDifficultyChallenge(event, 1)">Level 1</button>
             <button class ='button challengeButton' onClick="generateDifficultyChallenge(event, 2)">Level 2</button>
             <button class ='button challengeButton' onClick="generateDifficultyChallenge(event, 3)">Level 3</button>
@@ -39,14 +39,16 @@
             </select>
             <button class ='button challengeButton' onClick="generateNamedChallenge(event)">Challenge</button>
         </fieldset>
+        <p class='or'>-OR-</p>
+        <div class="challengeButtons">
+            <button class ='button challengeButton' onClick="generateRandomChallenge(event)">Full Random</button>
+        </div>
     </form>
-
     <div class="result"></div>
     <div class="timerAndCounter">
         <div>
             <div class="timerCounter">Timer</div>
             <label id="minutes">00</label>:<label id="seconds">00</label>
-            <button class ='button' onClick='stopTimer(event)'>Stop</button>
             <button id="pauseButton" onClick='togglePause(event)' class ='button'>Pause</button>
         </div>
         <div class="counter">
