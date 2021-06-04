@@ -43,10 +43,12 @@ function fillNameDropdown(){
 //take user input to use in creating challenge
 
 function generateNamedChallenge (event){
-    event.preventDefault()
+    event.preventDefault();
     let resultA = '';
     let resultB = '';
     
+    $('#challengeButton').removeClass('highlightButton');
+    console.log($(`#nameOne`).val())
     if($(`#nameOne`).val()) {
         resultA = $(`#nameOne`).val();
         resultB = findRandomName(listActorNames, resultA);
@@ -60,7 +62,8 @@ function generateDifficultyChallenge (event, level){
     let resultA = '';
     let resultB = '';
 
- //highlight difficulty selected
+    $(event.target).siblings().removeClass('highlightButton');
+    $(event.target).addClass('highlightButton');
 
     switch(level){
         case 1:

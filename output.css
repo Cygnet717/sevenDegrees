@@ -78,6 +78,11 @@ select {
   font-size: large;
 }
 
+.highlightButton {
+  background-color: yellow;
+  border: 1px solid green;
+}
+
 .result {
   width: 100%;
   text-align: center;
