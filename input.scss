@@ -14,6 +14,11 @@ $nonBoldFont:  'Montserrat', sans-serif;
     background-image: linear-gradient(#fdfdfd, $lightBlue);
 }
 
+%reverseFadeBlue {
+    border: 1px solid $lightBlue;
+    background-image: linear-gradient($lightBlue, #fdfdfd);
+}
+
 @mixin width($width) {
     width: $width;
 }
@@ -43,7 +48,7 @@ h1 {
 
 .howTo {
     position: fixed;
-    @extend %fadeBlue;
+    @extend %reverseFadeBlue;
     @include width(100%);
     text-align: center;
 }
@@ -63,7 +68,8 @@ fieldset{
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-    @extend %fadeBlue;
+    @extend %reverseFadeBlue;
+    padding: 10px;
 }
 
 .ledgend{
@@ -79,6 +85,7 @@ label{
 select {
     padding: 3px;
     border: none;
+    margin-bottom: 5px;
 }
 
 .or{
@@ -99,6 +106,8 @@ select {
 .challengeButton {
     font-family: $boldFont;
     font-size: large;
+    @extend %center-margins;
+    width: fit-content;
 }
 
 .highlightButton {
