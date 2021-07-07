@@ -8,7 +8,7 @@ Challenge yourself with this game based on Six Degrees of Kevin Bacon, but inste
 
 ## ScreenShot
 
-!(Landing Page)[/SixDegreesScreenshot.png]
+!(Landing Page)[SixDegreesScreenshot.png]
 
 ## Technology Used
 
