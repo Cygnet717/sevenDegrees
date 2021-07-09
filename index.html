@@ -7,6 +7,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="data.js"></script>
+    <link href="css/hover.css" rel="stylesheet" media="all">
     <link rel='icon' href='./001-clapperboard.svg'/>
     <link href="output.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,25 +16,27 @@
 </head>
   <body>
     <h1>Six Degrees</h1>
-    <div class='show'>How do I play this game? <i class="fas fa-angle-down"></i></div>
+    <div class="buttonHolder">
+        <div class='show hvr-glow'>How do I play this game? <i class="fas fa-angle-down"></i></div>
+    </div>
     <div class='howToModal'>
         <div class='howTo'>
             <p class="description">You will be given two actors and the challenge is to connect them through the movies them and others have been in.</p>
             <div class="description bold">Example Challenge:</div>
             <p class="description">Connect Brad Pitt to Johnny Depp</p>
             <div class="description bold">Solution:</div>
-            <p class="description">Brad Pitt &rarr; Mr. & Mrs. Smith &rarr; Angelina Jolie &rarr; The tourist &rarr; Johnny Depp</p>   
+            <p class="description">Brad Pitt &rarr; Mr. & Mrs. Smith &rarr; Angelina Jolie &rarr; The Tourist &rarr; Johnny Depp</p>   
             <p class="description">Then you can use the Connection counter to count the steps between them:<br /> 2 steps from Brad Pitt to Johnny Depp</p>
         </div>
     </div>
     <form>
         <div class="challengeButtons">
             <p class='or'>Pick Your Difficulty</p>
-            <button class ='button challengeButton' onClick="generateDifficultyChallenge(event, 1)">Level 1</button>
-            <button class ='button challengeButton' onClick="generateDifficultyChallenge(event, 2)">Level 2</button>
-            <button class ='button challengeButton' onClick="generateDifficultyChallenge(event, 3)">Level 3</button>
-            <button class ='button challengeButton' onClick="generateDifficultyChallenge(event, 4)">Level 4</button>
-            <button class ='button challengeButton' onClick="generateDifficultyChallenge(event, 5)">Level 5</button>
+            <button class ='button challengeButton hvr-shutter-out-horizontal' onClick="generateDifficultyChallenge(event, 1)">Level 1</button>
+            <button class ='button challengeButton hvr-shutter-out-horizontal' onClick="generateDifficultyChallenge(event, 2)">Level 2</button>
+            <button class ='button challengeButton hvr-shutter-out-horizontal' onClick="generateDifficultyChallenge(event, 3)">Level 3</button>
+            <button class ='button challengeButton hvr-shutter-out-horizontal' onClick="generateDifficultyChallenge(event, 4)">Level 4</button>
+            <button class ='button challengeButton hvr-shutter-out-horizontal' onClick="generateDifficultyChallenge(event, 5)">Level 5</button>
         </div>
         <p class='or'>-OR-</p>
         <fieldset>
@@ -42,26 +45,30 @@
             <select id="nameOne" name="nameOne">
                 <option value=''>Select one</option>
             </select>
-            <button class ='button challengeButton' onClick="generateNamedChallenge(event)">Challenge</button>
+            <button class ='button challengeButton hvr-shutter-out-horizontal' onClick="generateNamedChallenge(event)">Challenge</button>
         </fieldset>
         <p class='or'>-OR-</p>
         <div class="challengeButtons">
-            <button class ='button challengeButton' onClick="generateRandomChallenge(event)">Full Random</button>
+            <button class ='button challengeButton hvr-shutter-out-horizontal' onClick="generateRandomChallenge(event)">Full Random</button>
         </div>
     </form>
-    <div class="newChallenge"><i class="fas fa-angle-down"></i>Open for New challenge options<i class="fas fa-angle-down"></i></div>
+    <div class="buttonHolder">
+        <div class="newChallenge hvr-pulse button">
+            Play Again
+        </div>
+    </div>
     <div class="result"></div>
     <div class="timerAndCounter">
         <div>
             <div class="timerCounter">Timer</div>
             <label id="minutes">00</label>:<label id="seconds">00</label>
-            <button id="pauseButton" onClick='togglePause(event)' class ='button'>Pause</button>
+            <button id="pauseButton" onClick='togglePause(event)' class ='button hvr-outline-in'>Pause</button>
         </div>
         <div class="counter">
             <div class="timerCounter">Connection Counter</div> 
             <div id="connectionCount">0</div>
-            <button onClick='countConnection(event)' class ='button'>Count</button>
-            <button onClick='countToZero(event)' class ='button'>Reset</button>
+            <button onClick='countConnection(event)' class ='button hvr-outline-in'>Count</button>
+            <button onClick='countToZero(event)' class ='button hvr-outline-in'>Reset</button>
         </div>
     </div>
 
