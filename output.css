@@ -27,20 +27,32 @@ h1 {
   font-family: "Montserrat", sans-serif;
 }
 
+.howToModal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(10px);
+}
+
 .howTo {
   position: fixed;
+  top: 15%;
   width: 100%;
   text-align: center;
+  line-height: 30px;
 }
 
 .description {
   width: 70vw;
   font-family: "Montserrat", sans-serif;
+  margin-top: 0;
 }
 
-.example {
-  margin-bottom: 10px;
-  font-family: "Montserrat", sans-serif;
+.bold {
+  font-weight: bold;
+  margin-bottom: 0;
 }
 
 fieldset {

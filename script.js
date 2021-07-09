@@ -33,15 +33,14 @@ function Alphabetize(a, b) {
     return 0;
 }
 
+//fill name dropdown selection
 function fillNameDropdown(){
     for(let i=0; i< listActorNames.length; i++){
         $(`#nameOne`).append(`<option value='${listActorNames[i]}'>${listActorNames[i]}</option>`)
     }
-    
 }
 
 //take user input to use in creating challenge
-
 function generateNamedChallenge (event){
     event.preventDefault();
     let resultA = '';
@@ -57,6 +56,7 @@ function generateNamedChallenge (event){
     return deliverResult(resultA, resultB)
 };
 
+//create challenge based on difficulty selected
 function generateDifficultyChallenge (event, level){
     event.preventDefault();
     let resultA = '';
@@ -91,6 +91,7 @@ function generateDifficultyChallenge (event, level){
     return deliverResult(resultA, resultB)
 }
 
+//create challenge with any name and any difficulty level
 function generateRandomChallenge(event){
     event.preventDefault();
     $('.challengeButton').removeClass('highlightButton');
@@ -102,6 +103,7 @@ function generateRandomChallenge(event){
     return deliverResult(resultA, resultB)
 }
 
+//pull random name from the list that is not the name already selected
 function findRandomName(list, excluded){
 
     let rand = Math.floor(Math.random()*list.length)
@@ -109,7 +111,7 @@ function findRandomName(list, excluded){
     return list[rand]
 }
 
-//return challenge to user
+//return challenge to user and start timer
 function deliverResult(resultA, resultB){
     $('.result').empty();
     $('.result').append(`Connect <b>${resultA}</b> to <b>${resultB}</b>`);
@@ -138,20 +140,24 @@ function countConnection(event){
     $('#connectionCount').text(count);
 }
 
+//reset count to zero
 function countToZero(event){
     event.preventDefault();
     count = 0;
     $('#connectionCount').text(count);
 }
 
+//timer for challenge
 var sec = 0;
+
+//makes single digit numbers into two digit numbers (ex: 4 changes to 04)
 function pad ( val ) { 
     return val > 9 ? val : "0" + val; 
 }
 
-//timer for challenge
 let interval = null;
 
+//start timer
 function startTimer(){
     interval = setInterval(function (){
         $("#seconds").html(pad(++sec%60));
@@ -159,6 +165,7 @@ function startTimer(){
     }, 1000);
 }
 
+//stop timer
 function stopTimer(event){
     if(event){
          event.preventDefault();
@@ -167,6 +174,8 @@ function stopTimer(event){
 }
 
 let isPaused = false;
+
+//toggle pause timer
 function togglePause(event){
     event.preventDefault();
     if(!isPaused){
@@ -180,15 +189,17 @@ function togglePause(event){
 isPaused = !isPaused
 };
 
+//open instructions if clicked
 function watchInstructionsClick(){
     $('.show').on('click', function(){
-        $('.howTo').toggle(500);
+        $('.howToModal').toggle(500);
     });
-    $('.howTo').on('click', function(){
-        $('.howTo').toggle(500);
+    $('.howToModal').on('click', function(){
+        $('.howToModal').toggle(500);
     })
 };
 
+//check for duplicate actor name (only used when adding names to data.js)
 function checkListForDuplicates(list){
     let duplicateNames = []
     for(let i=0; i < list.length; i++) {
@@ -200,7 +211,7 @@ function checkListForDuplicates(list){
 };
 
 function runPage(){
-    $('.howTo').hide();
+    $('.howToModal').hide();
     prepLists();
     fillNameDropdown();
     watchInstructionsClick();
