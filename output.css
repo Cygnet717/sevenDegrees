@@ -8,7 +8,7 @@ h1 {
   background-image: linear-gradient(#fdfdfd, #bddae4);
 }
 
-fieldset, .howTo {
+.result, fieldset, .howTo {
   border: 1px solid #bddae4;
   background-image: linear-gradient(#bddae4, #fdfdfd);
 }
@@ -103,11 +103,19 @@ select {
   border: 1px solid green;
 }
 
+.newChallenge {
+  text-align: center;
+  margin: 30px auto;
+}
+
 .result {
   width: 100%;
   text-align: center;
   padding: 10px;
+  font-size: large;
   font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
+  width: 50vw;
 }
 
 .timerAndCounter {
@@ -140,7 +148,7 @@ select {
 }
 
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-  .timerCounter, fieldset, .timerAndCounter {
+  .timerCounter, fieldset, .result, .timerAndCounter {
     margin-left: auto;
     margin-right: auto;
   }

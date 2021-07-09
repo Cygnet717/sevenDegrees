@@ -199,6 +199,21 @@ function watchInstructionsClick(){
     })
 };
 
+//when challenge button clicked close challenge options to focus on the current challenge
+function watchChallengeClick() {
+    $('.challengeButton').on('click', function(){
+        $('form').toggle();
+        $('.newChallenge').toggle();
+        if(!$('.result').is(':visible')){
+            $('.result').toggle();
+        }
+    })
+    $('.newChallenge').on('click', function() {
+        $('form').toggle();
+        $('.newChallenge').toggle();
+    })
+}
+
 //check for duplicate actor name (only used when adding names to data.js)
 function checkListForDuplicates(list){
     let duplicateNames = []
@@ -212,9 +227,12 @@ function checkListForDuplicates(list){
 
 function runPage(){
     $('.howToModal').hide();
+    $('.newChallenge').hide();
+    $('.result').hide();
     prepLists();
     fillNameDropdown();
     watchInstructionsClick();
+    watchChallengeClick();
     //checkListForDuplicates(listActorNames);
 };
 

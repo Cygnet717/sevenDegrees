@@ -64,8 +64,6 @@ h1 {
     line-height: 30px;
 }
 
-
-
 .description{
     @extend %center-margins;
     @include width(70vw);
@@ -128,11 +126,21 @@ select {
     border: 1px solid green;
 }
 
+.newChallenge {
+    text-align: center;
+    margin: 30px auto;
+}
+
 .result{
     @include width(100%);
     text-align: center;
     padding: 10px;
+    font-size: large;
     font-family: $nonBoldFont;
+    @extend %reverseFadeBlue;
+    @extend %center-margin;
+    margin-top: 10px;
+    @include width(50vw);
 }
 
 .timerAndCounter{
