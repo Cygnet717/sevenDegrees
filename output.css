@@ -3,7 +3,7 @@
   margin-right: auto;
 }
 
-h1 {
+.contactForm, h1 {
   border: 1px solid #bddae4;
   background-image: linear-gradient(#fdfdfd, #bddae4);
 }
@@ -27,13 +27,19 @@ h1 {
   font-family: "Montserrat", sans-serif;
 }
 
-.howToModal {
+.contactModal, .instructionsModal {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   backdrop-filter: blur(10px);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   z-index: 5;
 }
 
@@ -158,8 +164,74 @@ select {
   border: 1px solid black;
 }
 
+.contactAndCheck {
+  width: fit-content;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contactButton, .check {
+  width: fit-content;
+  padding: 5px;
+}
+
+.check a {
+  text-decoration: none;
+  color: black;
+}
+
+.closeWindow {
+  align-self: flex-end;
+  margin-right: 10vw;
+}
+
+.contactUpper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactName {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.contactForm {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  justify-content: space-between;
+  height: 350px;
+  width: 300px;
+  border-radius: 2px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.inputArea {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  padding: 10px;
+}
+
+.inputButton {
+  cursor: pointer;
+}
+
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-  .timerCounter, fieldset, .result, .timerAndCounter {
+  .timerCounter, fieldset, .result, .timerAndCounter, .contactAndCheck {
     margin-left: auto;
     margin-right: auto;
   }

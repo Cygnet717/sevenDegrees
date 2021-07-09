@@ -191,13 +191,17 @@ isPaused = !isPaused
 
 //open instructions if clicked
 function watchInstructionsClick(){
-    $('.show').on('click', function(){
-        $('.howToModal').toggle(500);
+    $('.show, .instructionsModal').on('click', function(){
+        $('.instructionsModal').toggle();
     });
-    $('.howToModal').on('click', function(){
-        $('.howToModal').toggle(500);
-    })
 };
+
+//open contact from if clicked
+function watchContactClick() {
+    $('.contactButton, .closeWindow, .inputButton').on('click', function() {
+        $('.contactModal').toggle();
+    })
+}
 
 //when challenge button clicked close challenge options to focus on the current challenge
 function watchChallengeClick() {
@@ -226,13 +230,15 @@ function checkListForDuplicates(list){
 };
 
 function runPage(){
-    $('.howToModal').hide();
+    $('.instructionsModal').hide();
+    $('.contactModal').hide();
     $('.newChallenge').hide();
     $('.result').hide();
     prepLists();
     fillNameDropdown();
     watchInstructionsClick();
     watchChallengeClick();
+    watchContactClick();
     //checkListForDuplicates(listActorNames);
 };
 
