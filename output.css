@@ -1,4 +1,4 @@
-.challengeButton, .challengeButtons, .description, .show, h1 {
+.contactAndCheck, .challengeButton, .challengeButtons, .description, .show, h1 {
   margin-left: auto;
   margin-right: auto;
 }
@@ -34,6 +34,7 @@ h1 {
   left: 0;
   right: 0;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   height: 100%;
   width: 100%;
   display: flex;
@@ -88,10 +89,14 @@ select {
 
 .or {
   text-align: center;
+  width: 100%;
 }
 
 .challengeButtons {
   width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .button {
@@ -106,6 +111,7 @@ select {
   font-family: "Bebas Neue", cursive;
   font-size: large;
   width: fit-content;
+  align-self: center;
 }
 
 .highlightButton {
@@ -175,6 +181,7 @@ select {
 .contactButton, .check {
   width: fit-content;
   padding: 5px;
+  text-align: center;
 }
 
 .check a {
@@ -231,7 +238,7 @@ input, textarea {
 }
 
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-  .timerCounter, fieldset, .result, .timerAndCounter, .contactAndCheck {
+  .timerCounter, fieldset, .result, .timerAndCounter {
     margin-left: auto;
     margin-right: auto;
   }

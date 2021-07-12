@@ -53,6 +53,7 @@ h1 {
     left: 0;
     right: 0;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     height: 100%;
     width: 100%;
     display: flex;
@@ -109,11 +110,15 @@ select {
 
 .or{
     text-align: center;
+    width: 100%;
 }
 
-.challengeButtons{
+.challengeButtons{ 
     @extend %center-margins;
     @include width(fit-content);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .button {
@@ -129,6 +134,7 @@ select {
     font-size: large;
     @extend %center-margins;
     width: fit-content;
+    align-self: center;
 }
 
 .highlightButton {
@@ -194,7 +200,7 @@ select {
 .contactAndCheck {
     width: fit-content;
     padding: 10px;
-    @extend %center-margin;
+    @extend %center-margins;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -203,6 +209,7 @@ select {
 .contactButton, .check {
     width: fit-content;
     padding: 5px;
+    text-align: center;
 }
 
 .check a {
